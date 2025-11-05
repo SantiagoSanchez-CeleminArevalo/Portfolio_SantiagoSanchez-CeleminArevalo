@@ -1,0 +1,347 @@
+#include "LBL_FAD_Transform_Operations.h"
+
+#include <iostream>
+#include <fstream>
+#include <sstream>
+#include <sycl/sycl.hpp>
+sycl::queue q(sycl::cpu_selector_v);
+using namespace std;
+
+
+void LBL_FAD_Stage1(int blockIndex, unsigned short *ImgRef,
+		    unsigned int &n_indexes, unsigned short *bg_indexes,
+		    unsigned short *bg_block)
+{
+  short Img[BLOCK_SIZE * BANDS];
+  int centroid[BANDS];
+  int qVector[BANDS];
+  int uVector[BANDS];
+  int projection[BLOCK_SIZE];
+
+  int maxIndex;
+  long long maxBrightness;
+  long long brightness_iter1[BLOCK_SIZE];
+  unsigned short out_index;
+
+  long long tau_nu; // Not used
+  unsigned char numQU_nu = 0; // Not used
+
+  bool stop;
+
+  // Calculating the centroid pixel
+  averagePixel(ImgRef, centroid, BLOCK_SIZE);
+
+  // Cast ImgRef to int values copy it in Img and subtract the centroid pixel
+  duplicateAndCentralizeImg(ImgRef, Img, centroid, BLOCK_SIZE);
+
+  // Extracting the representative pixels and their projections
+  for(int iter=0; iter<PMAX; iter++){
+    // Calculating the brightness of each pixel
+    brightness(Img, maxIndex, maxBrightness, iter, brightness_iter1, BLOCK_SIZE);
+
+    stop_condition(tau_nu, numQU_nu, maxIndex, maxBrightness, brightness_iter1, stop, out_index, ALPHA);
+
+    if (stop)
+      break;
+    else{
+      bg_indexes[n_indexes] = out_index;
+      bg_block[n_indexes++] = blockIndex;
+    }
+
+    // Calculating "qVector" and "uVector"
+    quVectors(Img, maxIndex, maxBrightness, qVector, uVector);
+
+#ifdef VERBOSE_DBG
+    if (blockIndex == BLOCK_DBG || BLOCK_DBG==-1){
+      stringstream outputFilename;
+      outputFilename << OUTPUT_DIR << "/Stage1.txt";
+      ofstream outputFile;
+      outputFile.open(outputFilename.str(), std::ios::app);
+      outputFile <<  maxIndex << endl;
+      outputFile.close();
+    }
+#endif
+
+    // Calculating the projection of "Img" into "uVector"
+    projectingImg(Img, projection, uVector, BLOCK_SIZE);
+
+    // Subtracting the information contained in projection from the image
+    subtractingInformation(Img, projection, qVector, BLOCK_SIZE);
+  }
+}
+
+
+void LBL_FAD_Stage2(unsigned short *ImgRef, int *centroid,
+		    int qMatrix[][BANDS], int uMatrix[][BANDS],
+		    unsigned char &numQU, long long &tau, int blockSize)
+{
+  short Img[BLOCK_SIZE * BANDS];	// 14.02 bits
+  int qVector[BANDS];					// 20.12 bits
+  int uVector[BANDS];					// 02.30 bits
+  int projection[BLOCK_SIZE];				// 02.30 bits
+
+  int maxIndex;				// 32.00 bits
+  long long maxBrightness;  	// 48.16 bits
+  long long brightness_iter1[BLOCK_SIZE];
+  unsigned short out_index;
+
+  bool stop;
+
+  // Calculating the centroid pixel
+  averagePixel(ImgRef, centroid, blockSize);
+
+  // Cast ImgRef to int values (16.16), copy it in Img and subtract the centroid pixel
+  duplicateAndCentralizeImg(ImgRef, Img, centroid, blockSize);
+
+  // Extracting the representative pixels and their projections
+  for(int iter=0; iter<PMAX; iter++){
+    // Calculating the brightness of each pixel
+    brightness(Img, maxIndex, maxBrightness, iter, brightness_iter1, blockSize);
+
+    stop_condition(tau, numQU, maxIndex, maxBrightness, brightness_iter1, stop, out_index, ALPHA);
+
+    if (stop)
+      break;
+
+    // Calculating "qVector" and "uVector"
+    quVectors(Img, maxIndex, maxBrightness, qVector, uVector);
+
+    for(unsigned char _it=0; _it<BANDS; _it++){
+      qMatrix[numQU-1][_it] = qVector[_it];
+      uMatrix[numQU-1][_it] = uVector[_it];
+    }
+
+
+#ifdef VERBOSE_DBG
+    stringstream outputFilename;
+    outputFilename << OUTPUT_DIR << "/Stage2.txt";
+    ofstream outputFile;
+    outputFile.open(outputFilename.str(), std::ios::app);
+    outputFile <<  maxIndex << endl;
+    outputFile.close();
+#endif
+
+    // Calculating the projection of "Img" into "uVector"
+    projectingImg(Img, projection, uVector, blockSize);
+
+    // Subtracting the information contained in projection from the image
+    subtractingInformation(Img, projection, qVector, blockSize);
+  }
+}
+
+
+void LBL_FAD_Stage3_4(int blockIndex, unsigned short *ImgRef,
+		  unsigned char numQU, long long tau,
+		  int *centroid,
+		  int qMatrix[][BANDS], int uMatrix[][BANDS],
+		  bool *block_ad_map)
+{
+  short Img[BLOCK_SIZE * BANDS];
+  int projection[BLOCK_SIZE];
+
+  // Cast ImgRef to int values, copy it in Img and subtract the centroid pixel
+  duplicateAndCentralizeImg(ImgRef, Img, centroid, BLOCK_SIZE);
+
+  // Extracting the representative pixels and their projections
+  for(unsigned char iter=0; iter<numQU; iter++){
+    // Calculating the projection of "Img" into "uVector"
+    projectingImg(Img, projection, uMatrix[iter], BLOCK_SIZE);
+
+    // Subtracting the information contained in projection from the image
+    subtractingInformation(Img, projection, qMatrix[iter], BLOCK_SIZE);
+  }
+
+  brightnessAD(Img, tau, block_ad_map);
+}
+
+
+
+
+
+
+// ---------- HyperLCA Operators ---------- //
+
+
+// Calculating the average pixel of the frame (centroid pixel)
+void averagePixel(unsigned short *ImgRef, int *centroid, int blockSize)
+{
+  //Genero un buffer SYCL para cada una de las variables
+  sycl::buffer<unsigned short, 1> imgBuffer(ImgRef, sycl::range<1>(blockSize * BANDS));
+  sycl::buffer<int, 1> centroidBuffer(centroid, sycl::range<1>(BANDS));
+  // Envio un conjunto de comando a la cola para su ejecución
+  q.submit([&](sycl::handler& h) {
+    //Obtengo acceso a los buffers dentro del kernel
+    auto img = imgBuffer.get_access<sycl::access::mode::read>(h);
+    auto cent = centroidBuffer.get_access<sycl::access::mode::write>(h);
+    //Ejecuto el kernel en paralelo para cada banda
+    h.parallel_for(sycl::range<1>(BANDS), [=](sycl::id<1> id) {
+      int band = id[0];
+      int sum = 0;
+      // Itero sobre todos los pixeles del bloque
+      for(int pixel = 0; pixel < blockSize; pixel++) {
+        //Calculo la posición del pixel en el bloque que estamos
+        sum += img[pixel * BANDS + band];
+      }
+      //Calculo el promcedio de el bloque actual
+      cent[band] = sum / blockSize;
+    });
+  });
+}
+
+
+
+
+// Subtracting the centroid pixel and create the Auxiliary Img
+void duplicateAndCentralizeImg(unsigned short *ImgRef, short *Img, int *centroid, int blockSize)
+{
+  for(int pixel=0; pixel<blockSize; pixel++){
+    for(int band=0; band<BANDS; band++){
+      Img[pixel*BANDS + band] = ((short)(ImgRef[pixel*BANDS + band]) - (short)(centroid[band]))<<2;
+    }
+  }
+}
+
+
+
+// Calculating the brightness of each pixel
+void brightness(short *Img, int &maxIndex, long long &maxBrightness, unsigned char iter, long long *brightness_iter1, int blockSize)
+{
+  maxBrightness = 0;
+  maxIndex = 0;
+
+  //unsigned long long actualBrightness;
+  long long actualBrightness;
+  long long ImgValueLong;
+
+  for(int pixel=0; pixel<blockSize; pixel++){
+    // Computing the brightness of one pixel
+    actualBrightness = 0;
+    for(int band=0; band<BANDS; band++){
+      ImgValueLong = Img[pixel*BANDS + band];
+      actualBrightness += (ImgValueLong * ImgValueLong)<<12;
+    }
+
+    // Comparing with the maximum value obtained
+    if(actualBrightness > maxBrightness){
+      maxIndex = pixel;
+      maxBrightness = actualBrightness;
+    }
+    if (iter==0)
+      brightness_iter1[pixel] = actualBrightness;
+  }
+}
+
+
+
+// Calculating "qVector" and "uVector"
+void quVectors(short *Img, int &maxIndex, long long &maxBrightness, int *qVector, int *uVector)
+{
+
+  for(int band=0; band<BANDS; band++){
+    // qVector
+    qVector[band] = Img[maxIndex*BANDS + band];
+
+    // uVector
+    long long ImgValueLong = Img[maxIndex*BANDS + band];
+    ImgValueLong = ImgValueLong << 28; // -1 Considering the sign
+    uVector[band] = ImgValueLong / (maxBrightness >> 16);
+  }
+}
+
+
+
+// Calculating the projection of "Img" into "uVector"
+void projectingImg(short *Img, int *projection, int *uVector, int blockSize) {
+    // Genero los bufer SYCL para cada una de las variables
+    sycl::buffer<short, 1> imgBuffer(Img, sycl::range<1>(blockSize * BANDS));
+    sycl::buffer<int, 1> projectionBuffer(projection, sycl::range<1>(blockSize));
+    sycl::buffer<int, 1> uVectorBuffer(uVector, sycl::range<1>(BANDS));
+    //Envio un conjunto de acciones a la cola para su ejecución
+    q.submit([&](sycl::handler &h) {
+        auto img = imgBuffer.get_access<sycl::access::mode::read>(h);
+        auto projection = projectionBuffer.get_access<sycl::access::mode::write>(h);
+        auto uVector = uVectorBuffer.get_access<sycl::access::mode::read>(h);
+        //Ejecuto el kernel en paralelo para cada pixel
+        h.parallel_for(sycl::range<1>(blockSize), [=](sycl::id<1> pixel) {
+            long long projectionValueLong = 0;
+            //Itero sobre cada uno
+            for (int band = 0; band < BANDS; band++) {
+                long long uValueLong = uVector[band];
+                long long ImgValueLong = img[pixel[0] * BANDS + band];
+                projectionValueLong += uValueLong * ImgValueLong;
+            }
+            //Almaceno el valor obtenido
+            projection[pixel] = projectionValueLong >> 4;
+        });
+    });
+}
+
+
+
+
+// Subtracting the information contained in projection from the image
+void subtractingInformation(short *Img, int *projection, int *qVector, int blockSize)
+{
+  long long longValueToSubtract;
+  long long qValueLong;
+  long long projectionValueLong;
+
+  for(int pixel=0; pixel<blockSize; pixel++) {
+    for(int band=0; band<BANDS; band++)	{
+      qValueLong = qVector[band];
+      projectionValueLong = projection[pixel];
+
+      longValueToSubtract   = qValueLong * projectionValueLong;
+      Img[pixel*BANDS + band] -= longValueToSubtract >> 28;
+    }
+  }
+}
+
+
+void stop_condition(long long &tau, unsigned char &numQU, unsigned short maxIndex, long long maxBrightness, long long *brightnessIter1, bool &stop, unsigned short &out_index, const int ALPHA)
+{
+  unsigned long long sf;
+  const int _alpha = ALPHA<<30;
+  long long imaxBrightness;
+  stop = false;
+
+  imaxBrightness = (brightnessIter1[maxIndex])>>16;
+  sf = (unsigned long long) (maxBrightness<<14)/imaxBrightness;
+
+
+  if (sf*100 < (_alpha))
+    {
+      stop = true;
+    }else{
+    numQU++; //Number of QU extracted in Stage 2 for being used in Stage 3.
+    tau = maxBrightness; //Tau as threshold in Stage 4 for anomaly detection.
+    out_index = maxIndex;
+  }
+}
+
+
+// Anomaly Detection
+void brightnessAD(short *Img, long long tau, bool *outAnomaly) {
+    //Genero los buffers SYCL para cada una de las variables
+    sycl::buffer<short, 1> imgBuffer(Img, sycl::range<1>(BLOCK_SIZE * BANDS));
+    sycl::buffer<bool, 1> outAnomalyBuffer(outAnomaly, sycl::range<1>(BLOCK_SIZE));
+    //Envio un conjunto de acciones a la cola para su ejecución
+    q.submit([&](sycl::handler &h) {
+        auto img = imgBuffer.get_access<sycl::access::mode::read>(h);
+        auto outAnomaly = outAnomalyBuffer.get_access<sycl::access::mode::write>(h);
+        //Ejecuto el kernel en paralelo para cada pixel
+        h.parallel_for(sycl::range<1>(BLOCK_SIZE), [=](sycl::id<1> pixel) {
+            long long actualBrightness = 0;
+            long long threshold = (tau << 1) - (tau >> 1);
+            //Itero sobre cada uno de los bloques
+            for (int band = 0; band < BANDS; band++) {
+                long long ImgValueLong = img[pixel[0] * BANDS + band];
+                long long aux = (ImgValueLong * ImgValueLong) << 12;
+                actualBrightness += aux;
+            }
+            //Comparo el valor obtenido con el límite
+            outAnomaly[pixel] = (actualBrightness > threshold);
+        });
+    });
+}
+

@@ -1,0 +1,4 @@
+En esta tarea comparamos dos ejecuciones del programa matmul.cpp. 
+
+Para realizar este informe, hemos utilizado dos snapshots del programa matmul.cpp. 
+El primer snapshot (con Warning) corresponde a la compilación con un tamaño de matriz de 300, mientras que el segundo snapshot (sin Warning) corresponde a la compilación con un tamaño de matriz de 1000. 

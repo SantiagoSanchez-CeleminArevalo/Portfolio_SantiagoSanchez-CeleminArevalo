@@ -1,0 +1,6 @@
+En esta tarea, realizamos dos análisis utilizando Intel Advisor para comparar el rendimiento del programa matmul.cpp. 
+
+Primero, compilamos el programa con g++ sin optimizaciones, lo que generó un warning indicando la falta de optimización. 
+Posteriormente, recompilamos el código utilizando el compilador de Intel oneAPI, lo que eliminó el warning. 
+Realizamos análisis de Survey y Characterization (Trip Counts y FLOP) en ambas versiones del programa. 
+Guardamos los resultados de ambos análisis como snapshots, uno con el warning y otro sin él, y observamos mejoras significativas en el rendimiento tras utilizar el compilador adecuado.

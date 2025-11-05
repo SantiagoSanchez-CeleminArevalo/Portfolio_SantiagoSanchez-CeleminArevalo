@@ -1,0 +1,14 @@
+santiago@santiago-sanchez:~/Escritorio/lab1-master/src $ g++ -g -fopenmp -o0 matmul.cpp -o matmul
+santiago@santiago-sanchez:~/Escritorio/lab1-master/src $ ./matmul
+
+MATMUL:
+  C = A * B.
+  Order N                 = 300
+  Elapsed seconds = 0.0859997
+  C(100,100)  = 1
+
+Matmul:
+  Normal end of execution.
+
+
+
