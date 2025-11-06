@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "Kaftka_Client"
+version = "0.1.0"
+authors = [
+    { name = "Santiago Sanchez-Celemin", email="santiago.sanchez@uclm.es" }
+]
+description = "Template for Distributed Systems laboratory"
+requires-python = ">=3.10"
+dependencies = ['zeroc-ice', 'confluent_kafka']
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Operating System :: OS Independent",
+]
+license = "GPL-3.0-only"
+
+[project.scripts]
+kaftka-client = "Kaftka_codigos.main:main"
+
+[[tool.mypy.overrides]]
+module = [
+  "Ice",
+  "RemoteTypes"
+]
+ignore_missing_imports = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["Kaftka_codigos"]

@@ -1,0 +1,368 @@
+﻿<Window x:Class="GesstiFFest.Gestion_Festivales"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="GesstiFFest Gestion de Festivales" 
+        Background="#f0f0f0" 
+        Icon="Fotos/Logo IPO.png"
+        ResizeMode="CanResize"
+        WindowState="Maximized"
+        WindowStyle="SingleBorderWindow"
+        FontWeight="Bold">
+
+    <Window.Resources>
+        <Storyboard x:Key="FadeInStoryboard" AutoReverse="True">
+            <DoubleAnimation 
+                Storyboard.TargetName="MainGrid" 
+                Storyboard.TargetProperty="Opacity" 
+                From="0" To="1" 
+                Duration="0:0:1" />
+        </Storyboard>
+    </Window.Resources>
+    <Grid Width="1555">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="300"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="859.39"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid Background="#3b5998" Grid.ColumnSpan="3" Margin="0,10,15,703">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="Auto" MinWidth="370"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal" Grid.Column="0" VerticalAlignment="Center" Margin="10,0,10,0" Height="65">
+                <Button x:Name="bt_Inicio" 
+                Content="Inicio" 
+                Background="#FF4267B2" 
+                Foreground="White" 
+                FontWeight="Bold" 
+                Margin="5" 
+                Width="260"
+                Cursor="Hand" Click="bt_Inicio_Click_1" />
+                <Button x:Name="Gestion_fest" 
+                Content="Gestión de Festivales" 
+                Background="DodgerBlue" 
+                Foreground="White" 
+                FontWeight="Bold" 
+                Margin="5" 
+                Width="260"
+                Cursor="Hand" />
+                <Button x:Name="bton_gestion_artistas" 
+                Content="Gestión de Artistas" 
+                Background="#4267B2" 
+                Foreground="White" 
+                FontWeight="Bold" 
+                Margin="5" 
+                Width="260"
+                Cursor="Hand" Height="55" Click="bton_gestion_artistas_Click_1" />
+                <Button x:Name="btn_calendario" 
+                Content="Calendario" 
+                Background="#4267B2" 
+                Foreground="White" 
+                FontWeight="Bold" 
+                        Margin=" 5"
+                Width="260"
+                Cursor="Hand" Height="55" Click="btn_calendario_Click_1" />
+            </StackPanel>
+
+          
+            <Border BorderBrush="White" BorderThickness="1" CornerRadius="8" Padding="5" Margin="65,10,10,10" Grid.Column="1">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                  
+                    <Image x:Name="Foto_persona" 
+                   Source="/Logo IPO.png" 
+                   Width="60" 
+                   Height="60" 
+                   VerticalAlignment="Center" 
+                   Margin="0,0,10,0" 
+                   Stretch="UniformToFill" />
+
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBox x:Name="txtNombreUsuario" 
+                         Text="Nombre Usuario" 
+                         FontSize="14" 
+                         FontWeight="Bold" 
+                         Foreground="White" 
+                         IsReadOnly="True" 
+                         Background="Transparent" 
+                         BorderThickness="0" 
+                         Margin="0,0,0,5" />
+                        <TextBox x:Name="txtUltimaConexion" 
+                         Text="Última conexión: --/--/-- --:-- PM" 
+                         FontSize="12" 
+                         Foreground="White" 
+                         IsReadOnly="True" 
+                         Background="Transparent" 
+                         BorderThickness="0" Height="17" Width="229" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            <Button Content="?" 
+        VerticalAlignment="Center" 
+                   
+        Height="50" 
+        Margin="1100,0,0,0" 
+        FontSize="24" 
+        Background="LightBlue" 
+        BorderBrush="Blue" 
+        BorderThickness="2" RenderTransformOrigin="-0.068,0.533" HorizontalAlignment="Left" Width="45" Click="AyudaClick" >
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+                    BorderBrush="{TemplateBinding BorderBrush}" 
+                    BorderThickness="{TemplateBinding BorderThickness}" 
+                    Width="{TemplateBinding Width}" 
+                    Height="{TemplateBinding Height}" 
+                    CornerRadius="25">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="🔐" 
+                    HorizontalAlignment="Left" 
+    VerticalAlignment="Center" 
+    Width="45"
+    Height="50"
+    Margin="5,0,0,0"
+    Background="LightBlue"
+    BorderBrush="Blue" 
+    BorderThickness="2" 
+    Click="CerrarSesionClick" Grid.Column="1">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" 
+BorderBrush="{TemplateBinding BorderBrush}" 
+BorderThickness="{TemplateBinding BorderThickness}" 
+Width="{TemplateBinding Width}" 
+Height="{TemplateBinding Height}" 
+CornerRadius="25">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+        </Grid>
+
+        <Grid x:Name="Twitter" Margin="15,107,15,22" Grid.ColumnSpan="3">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" MinWidth="250"/>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="0"/>
+                <ColumnDefinition Width="0"/>
+            </Grid.ColumnDefinitions>
+
+            <TextBlock Text="FESTIVALES: " FontWeight="UltraBold" Margin="10,0,0,0"/>
+            <ListBox x:Name="Festivales"
+         Grid.Row="0"
+         Grid.Column="0"
+         Margin="10,28,10,331"
+         Background="#E7EFF6"
+         BorderBrush="#D1D1D6"
+         BorderThickness="1"
+         SelectionChanged="festivales_SelectionChanged"
+         DisplayMemberPath="Nombre" />
+
+
+           
+            <StackPanel Grid.Row="0" Grid.Column="1" Margin="10,28,813,10" Background="White">
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,20">
+                   
+                    <TextBlock Text="Detalles del Festival" 
+               FontSize="20" 
+               FontWeight="Bold" 
+               Foreground="#4267B2" 
+               VerticalAlignment="Center"/>
+
+                  
+                    <Rectangle Width="10" Fill="Transparent"/>
+     
+                    <Button Width="24" Height="24" Margin="5,0" Background="Transparent" BorderThickness="0" ToolTip="Editar" Click="Modificar_Click">
+                        <Image Source="Editar.png" Stretch="Uniform"/>
+                    </Button>
+
+                    <Button Width="24" Height="24" Margin="5,0" Background="Transparent" BorderThickness="0" ToolTip="Eliminar" Click="DarBaja_Click">
+                        <Image Source="Papelera.png" Stretch="Uniform"/>
+                    </Button>
+                </StackPanel>
+
+                <TextBlock Text="Seleccionar Edición: " FontWeight="Bold" Margin="10"/>
+                <ComboBox x:Name="cmbEdicion" Margin="10,0,0,0" SelectionChanged="cmbEdicion_SelectionChanged" HorizontalAlignment="Left" Height="24" Width="430">
+                </ComboBox>
+                <TextBlock Text="Nombre: " FontWeight="Bold" Margin="10"/>
+                <TextBox Name="txtFestivalNombre" Margin="10,0,0,0" BorderBrush="#D1D1D6" BorderThickness="1" Background="#F8F8F8" Width="430" Height="24" HorizontalAlignment="Left"/>
+
+                <TextBlock Text="Fecha: " FontWeight="Bold" Margin="10"/>
+                <TextBox Name="txtFestivalFecha" Margin="10,0,0,0" BorderBrush="#D1D1D6" BorderThickness="1" Background="#F8F8F8" Width="430" Height="24" HorizontalAlignment="Left"/>
+
+                <TextBlock Text="Redes Sociales: " FontWeight="Bold" Margin="10"/>
+                <StackPanel Orientation="Vertical" Margin="0">
+                    
+                    <StackPanel Orientation="Horizontal" Margin="5">
+                 
+                        <Button Width="40" Height="40" Margin="5" Background="Transparent" Click="Facebook_Click">
+                            <Image x:Name="Facebook" Source= "IconosRedSocial/Facebook.png" Width="30" Height="30" RenderTransformOrigin="0.5,0.507" />
+                        </Button>
+
+                     
+                        <Button x:Name="Instagram" Width="40" Height="40" Margin="5" Background="Transparent" Click="Instagram_Click">
+                            <Image Source="IconosRedSocial\Insta.jpg" Width="30" Height="30" />
+                        </Button>
+
+
+                      
+                        <Button Width="40" Height="40" Margin="5" Background="Transparent" Click="Twitter_Click">
+                            <Image Source="IconosRedSocial\X.jpg" Width="30" Height="30" />
+                        </Button>
+                    </StackPanel>
+
+                  
+
+                </StackPanel>
+
+                <TextBlock Text="Precios: " FontWeight="Bold" Margin="10"/>
+                <StackPanel Orientation="Horizontal" Margin="5">
+                    <TextBlock Text="General (€): " VerticalAlignment="Center" Margin="5,0,5,0"/>
+                    <TextBox Name="txtPrecioGeneral" Width="80" BorderBrush="#D1D1D6" BorderThickness="1" Background="#F8F8F8"/>
+                    <TextBlock Text="VIP (€): " VerticalAlignment="Center" Margin="10,0,5,0"/>
+                    <TextBox Name="txtPrecioVIP" Width="80" BorderBrush="#D1D1D6" BorderThickness="1" Background="#F8F8F8"/>
+                </StackPanel>
+
+                <TextBlock Text="Estado: " FontWeight="Bold" Margin="10"/>
+                <ComboBox x:Name="cmbEstado" Margin="10,0,0,0" SelectionChanged="cmbEstado_SelectionChanged" HorizontalAlignment="Left" Height="24 " Width="430">
+                    <ComboBoxItem Content="Pendiente"/>
+                    <ComboBoxItem Content="Confirmado"/>
+                    <ComboBoxItem Content="Pasado"/>
+                    <ComboBoxItem Content="Cancelado"/>
+                </ComboBox>
+
+                <TextBlock Text="Normas Generales: " FontWeight="Bold" Margin="10"/>
+                <TextBox Name="txtNormasGenerales" Margin="10,0,0,0" BorderBrush="#D1D1D6" BorderThickness="1" Background="#F8F8F8" Height="103" TextWrapping="Wrap" AcceptsReturn="True" Width="430" HorizontalAlignment="Left"/>
+
+
+                
+                <Button Margin="5" Background="#FF1C48A1" Foreground="White" Click="VerArtistas_Click" Visibility="Collapsed">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Bottom">
+                        <Button Content="Modificar" Width="100" Height="40" Background="#FF93C47D" Foreground="White" Click="Modificar_Click" FontSize="11"/>
+                        <Button Content="Dar Baja" Width="100" Height="40" Background="#FF1C48A1" Foreground="White" Margin="20,0" Click="DarBaja_Click" FontSize="11"/>
+                    </StackPanel>
+                </Button>
+
+            </StackPanel>
+
+            
+            <StackPanel Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,390,0,0" Height="274" Width="230">
+                <TextBlock Text="Cartel" FontSize="18" FontWeight="Bold" Foreground="#4267B2" Height="27" Width="53"/>
+                <Image x:Name="Foto_festi" MaxWidth="200" MaxHeight="237" Width="174" Stretch="Fill" RenderTransformOrigin="0.986,0.46" SnapsToDevicePixels="True"/>
+            </StackPanel>
+            
+            <StackPanel x:Name="Escenarios" Margin="467,10,10,0" Grid.Column="1">
+                <Grid Height="655" Width="764">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="212*"/>
+                        <RowDefinition Height="443*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" MinWidth="171"/>
+                        <ColumnDefinition Width="14*"/>
+                        <ColumnDefinition Width="19*"/>
+                        <ColumnDefinition Width="0"/>
+                    </Grid.ColumnDefinitions>
+
+                
+
+                    <TextBlock Text="ESCENARIOS: " FontWeight="UltraBold" Margin="10,0,0,0"/>
+                    <ListBox x:Name="EscenariosGrid"
+             Grid.Row="0"
+             Grid.Column="0"
+             Margin="10,28,183,331"
+             Background="#E7EFF6"
+             BorderBrush="#D1D1D6"
+             BorderThickness="1"
+             SelectionChanged="escenarios_SelectionChanged"
+             DisplayMemberPath="Nombre" Grid.ColumnSpan="2" HorizontalAlignment="Right" Width="230" Grid.RowSpan="2" />
+
+
+               
+                    <StackPanel Grid.Row="0" Grid.Column="1" Margin="98,28,8,10" Background="White" RenderTransformOrigin="0.5,0.5" Grid.ColumnSpan="2" Grid.RowSpan="2">
+                        <StackPanel.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform AngleY="-0.304" AngleX="-0.016"/>
+                                <RotateTransform/>
+                                <TranslateTransform Y="-0.795" X="0.088"/>
+                            </TransformGroup>
+                        </StackPanel.RenderTransform>
+                        <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,20">
+                           
+                            <TextBlock Text="Detalles del Escenario" 
+                           FontSize="20" 
+                           FontWeight="Bold" 
+                           Foreground="#4267B2" 
+                           VerticalAlignment="Center"/>
+
+                           
+                            <Rectangle Width="10" Fill="Transparent"/>
+
+                            
+                            <Button Width="24" Height="24" Margin="5,0" Background="Transparent" BorderThickness="0" ToolTip="Editar" Click="btnModificarEscenario">
+                                <Image Source="Editar.png" Stretch="Uniform"/>
+                            </Button>
+
+                            
+                            <Button Width="24" Height="24" Margin="5,0" Background="Transparent" BorderThickness="0" ToolTip="Eliminar" Click="btnBorrarEscenario">
+                                <Image Source="Papelera.png" Stretch="Uniform"/>
+                            </Button>
+                        </StackPanel>
+
+                        <TextBlock Text="Nombre: " FontWeight="Bold" Margin="10"/>
+                        <TextBox x:Name="txtEscenarioNombre" Margin="10,0,0,0" Width="460" BorderBrush="#D1D1D6" Height="24" BorderThickness="1" Background="#F8F8F8"  HorizontalAlignment="Left" TextChanged="txtEscenarioNombre_TextChanged"/>
+
+                        <TextBlock Text="Aforo: " FontWeight="Bold" Margin="10"/>
+                        <TextBox x:Name="txtEscenarioAforo1" Margin="10,0,0,0" BorderBrush="#D1D1D6" BorderThickness="1" Background="#F8F8F8" HorizontalAlignment="Left" Width="460" Height="24" TextChanged="txtEscenarioAforo_TextChanged"/>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="Calendario: " FontWeight="Bold" Margin="10"/>
+                            <Button Content="Cargar Calendario" Background="#4267B2" Foreground="White" Visibility="Collapsed" Width="150" Margin="15" Click="CargarCalendario_Click"/>
+                        </StackPanel>
+
+
+                        <StackPanel Orientation="Horizontal" Margin="10">
+                            <DataGrid x:Name="dataGridArtistas" 
+          Width="460" 
+          Height="355" 
+          AutoGenerateColumns="False" 
+          IsReadOnly="False" 
+          SelectionChanged="DataGrid_SelectionChanged"
+          CellEditEnding="dataGridArtistas_CellEditEnding">
+                                <DataGrid.Columns>
+                                    <DataGridTextColumn Header="Hora Actuación" Binding="{Binding hora, UpdateSourceTrigger=PropertyChanged}" Width="*"/>
+                                    <DataGridTextColumn Header="Nombre del Artista" Binding="{Binding Artista_fest, UpdateSourceTrigger=PropertyChanged}" Width="*"/>
+                                    <DataGridTextColumn Header="Estado del Artista" Binding="{Binding Estado, UpdateSourceTrigger=PropertyChanged}" Width="*"/>
+                                </DataGrid.Columns>
+                            </DataGrid>
+
+                        </StackPanel>
+                        <StackPanel Orientation="Horizontal" Margin="5"/>
+                    </StackPanel>
+
+
+                    
+                    <StackPanel Grid.Row="0" Grid.Column="3" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,78,0,0" Height="0" Width="0"/>
+                    <Button x:Name="btnModificar" Content="Modificar" HorizontalAlignment="Left" Margin="76,35,0,0" VerticalAlignment="Top" Foreground="White" Background="#4CAF50" Height="43" Width="188" Click="Button_Modificar" Grid.ColumnSpan="2" Visibility="Collapsed"/>
+
+                    <StackPanel x:Name="FotoEscenario1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="10,175,0,5" Height="274" Width="230" Grid.ColumnSpan="2">
+                        <TextBlock Text="Cartel" FontSize="18" FontWeight="Bold" Foreground="#4267B2" Height="27" Width="53"/>
+                        <Image x:Name="FotoEscenario" Grid.ColumnSpan="2" Height="210" Margin="6,20,5,0" Width="220" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    </StackPanel>
+                </Grid>
+            </StackPanel>
+            <Button Content="ADD +" Background="#4267B2" Foreground="White" Click="DarAlta_Click" FontSize="11" Margin="10,351,10,290"/>
+        </Grid>
+
+
+    </Grid>
+
+</Window>
+    

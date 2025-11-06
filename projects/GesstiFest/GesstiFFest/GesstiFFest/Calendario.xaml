@@ -1,0 +1,217 @@
+﻿<Window x:Class="GesstiFFest.Calendario"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GesstiFFest"
+        mc:Ignorable="d"
+        Title="Calendario"
+        Height="820" Width="1530"
+        Background="#f0f0f0" Icon="/Logo IPO.png"
+        WindowStyle="SingleBorderWindow"
+        WindowState="Maximized"
+        ResizeMode="CanResizeWithGrip" FontWeight="Bold">
+
+    <Window.Resources>
+        <Storyboard x:Key="FadeOutStoryboard" AutoReverse="True">
+            <DoubleAnimation 
+             Storyboard.TargetName="MainGrid" 
+             Storyboard.TargetProperty="Opacity" 
+             From="1" To="0" 
+             Duration="0:0:1" />
+        </Storyboard>
+    </Window.Resources>
+
+    <Grid x:Name="Pantalla_principal" Width="1555">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="280*"/>
+        </Grid.ColumnDefinitions>
+      
+
+        <TextBlock x:Name="lbl_op4" FontSize="20" Margin="28,459,1155,675" Text="• Es tu punto de partida para organizar todo de manera fácil y rápida. ¡Vamos a por ello!" Foreground="#FF020814" Grid.ColumnSpan="2"/>
+
+
+       <TextBlock x:Name="lbl_operaciones" 
+                FontWeight="Bold" 
+                FontSize="36" 
+                Margin="10,282,1200,834" 
+                Foreground="#FF020814" Grid.ColumnSpan="2"><Run Text="Desde aquí puedes"/><Run Language="es-es" Text=" Realizar ciertas operaciones"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="lbl_op1" FontSize="20" Margin="28,357,941,781" Text="• Revisar qué festivales están en marcha o pendientes." Foreground="#FF020814" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="lbl_op2" FontSize="20" Margin="28,392,962,750" Text="• Gestionar artistas, escenarios y otros detalles." Foreground="#FF020814" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="lbl_op3" FontSize="20" Margin="24,424,149,709" Text="• Acceder a tu perfil y ver tu última actividad." Foreground="#FF020814"/>
+        <Grid Background="#3b5998" Grid.ColumnSpan="2" Margin="0,10,15,702">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+              
+                <ColumnDefinition Width="Auto" MinWidth="370"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Orientation="Horizontal" Grid.Column="0" VerticalAlignment="Center" Margin="10,0,10,0" Height="65">
+                <Button x:Name="bt_Inicio" 
+                 Content="Inicio" 
+                 Background="#4267B2" 
+                 Foreground="White" 
+                 FontWeight="Bold" 
+                 Margin="5" 
+                 Width="260"
+                 Cursor="Hand" Click="bt_Inicio_Click" />
+                <Button x:Name="Gestion_fest" 
+                 Content="Gestión de Festivales" 
+                 Background="#FF4267B2" 
+                 Foreground="White" 
+                 FontWeight="Bold" 
+                 Margin="5" 
+                 Width="260"
+                 Cursor="Hand" Click="Gestion_fest_Click_2" />
+                <Button x:Name="bton_gestion_artistas" 
+                 Content="Gestión de Artistas" 
+                 Background="#4267B2" 
+                 Foreground="White" 
+                 FontWeight="Bold" 
+                 Margin="5" 
+                 Width="260"
+                 Cursor="Hand" Height="55" Click="bton_gestion_artistas_Click_1" />
+                <Button x:Name="btn_calendario" 
+                 Content="Calendario" 
+                 Background="DodgerBlue" 
+                 Foreground="White" 
+                 FontWeight="Bold" 
+                        Margin="5"
+                 Width="260"
+                 Cursor="Hand" Height="55" />
+            </StackPanel>
+
+            <Border BorderBrush="White" BorderThickness="1" CornerRadius="8" Padding="5" Margin="95,10,30,10" Grid.Column="1">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+              
+                    <Image x:Name="Foto_persona" 
+                     Source="/Logo IPO.png" 
+                     Width="60" 
+                     Height="60" 
+                     VerticalAlignment="Center" 
+                     Margin="0,0,10,0" 
+                     Stretch="UniformToFill" />
+
+
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBox x:Name="txtNombreUsuario" 
+                         Text="Nombre Usuario" 
+                         FontSize="14" 
+                         FontWeight="Bold" 
+                         Foreground="White" 
+                         IsReadOnly="True" 
+                         Background="Transparent" 
+                         BorderThickness="0" 
+                         Margin="0,0,0,5" />
+                        <TextBox x:Name="txtUltimaConexion" 
+                         Text="Última conexión: --/--/-- --:-- PM" 
+                         FontSize="12" 
+                         Foreground="White" 
+                         IsReadOnly="True" 
+                         Background="Transparent" 
+                         BorderThickness="0" Height="17" Width="229" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            <Button Content="?" 
+             HorizontalAlignment="Left" 
+             VerticalAlignment="Center" 
+             Width="45"
+             Height="50"
+             Margin="1094,0,0,0" 
+             FontSize="24" 
+             Background="LightBlue" 
+             BorderBrush="Blue" 
+             BorderThickness="2" Click="AyudaClick" RenderTransformOrigin="0.222,0.602" Grid.ColumnSpan="2" >
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" 
+                         BorderBrush="{TemplateBinding BorderBrush}" 
+                         BorderThickness="{TemplateBinding BorderThickness}" 
+                         Width="{TemplateBinding Width}" 
+                         Height="{TemplateBinding Height}" 
+                         CornerRadius="25">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="🔐"
+                HorizontalAlignment="Left" 
+             VerticalAlignment="Center" 
+             Width="45"
+             Height="50"
+             Margin="41,0,0,0"
+             Background="LightBlue" 
+             BorderBrush="Blue" 
+             BorderThickness="2" 
+             Click="CerrarSesionClick" Grid.Column="1" RenderTransformOrigin="0.335,0.506">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" 
+BorderBrush="{TemplateBinding BorderBrush}" 
+BorderThickness="{TemplateBinding BorderThickness}" 
+Width="{TemplateBinding Width}" 
+Height="{TemplateBinding Height}" 
+CornerRadius="25">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+
+        </Grid>
+
+        <Grid Margin="0,168,15,0" Grid.ColumnSpan="2">
+         
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,-50,0,20">
+            </StackPanel>
+
+            <Grid Margin="10,0,10,10">
+                <UniformGrid Rows="1" Columns="7" Height="527" VerticalAlignment="Top" Margin="0,0,0,0">
+                    <TextBlock Text="L" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#4267B2" />
+                    <TextBlock Text="M" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#4267B2" />
+                    <TextBlock Text="X" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#4267B2" />
+                    <TextBlock Text="J" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#4267B2" />
+                    <TextBlock Text="V" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#4267B2" />
+                    <TextBlock Text="S" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#4267B2" />
+                    <TextBlock Text="D" HorizontalAlignment="Center" FontWeight="Bold" Foreground="#D22F2F" />
+                </UniformGrid>
+
+              
+                <UniformGrid x:Name="DaysGrid" Rows="6" Columns="7" Margin="0,35,0,0">
+                 
+                </UniformGrid>
+            </Grid>
+        </Grid>
+        <ComboBox x:Name="MonthComboBox" 
+                          Background="White" 
+                          Foreground="#020814" 
+                          SelectionChanged="MonthComboBox_SelectionChanged" Margin="96,107,268,665">
+            <ComboBoxItem Content="Enero" Tag="1" />
+            <ComboBoxItem Content="Febrero" Tag="2" />
+            <ComboBoxItem Content="Marzo" Tag="3" />
+            <ComboBoxItem Content="Abril" Tag="4" />
+            <ComboBoxItem Content="Mayo" Tag="5" />
+            <ComboBoxItem Content="Junio" Tag="6" />
+            <ComboBoxItem Content="Julio" Tag="7" />
+            <ComboBoxItem Content="Agosto" Tag="8" />
+            <ComboBoxItem Content="Septiembre" Tag="9" />
+            <ComboBoxItem Content="Octubre" Tag="10" />
+            <ComboBoxItem Content="Noviembre" Tag="11" />
+            <ComboBoxItem Content="Diciembre" Tag="12" />
+        </ComboBox>
+        <ComboBox x:Name="YearComboBox" 
+                          Margin="310,107,94,665" 
+                          Background="White" 
+                          Foreground="#020814" 
+                          SelectionChanged="YearComboBox_SelectionChanged" />
+        <Label x:Name="Mes_" Content="Mes:" HorizontalAlignment="Left" Margin="54,105,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="Mes__Copiar" Content="Año:" HorizontalAlignment="Left" Margin="268,105,0,0" VerticalAlignment="Top"/>
+        <Rectangle HorizontalAlignment="Left" Height="42" Margin="20,105,0,0" Stroke="Black" VerticalAlignment="Top" Width="409"/>
+
+
+    </Grid>
+</Window>

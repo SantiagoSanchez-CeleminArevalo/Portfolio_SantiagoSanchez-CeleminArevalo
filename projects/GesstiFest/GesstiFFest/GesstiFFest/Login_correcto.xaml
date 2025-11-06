@@ -1,0 +1,200 @@
+﻿<Window x:Class="GesstiFFest.Login_correcto"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="GesstiFFest Pantalla Principal"
+        Height="820" Width="1530"
+        Background="#f0f0f0" Icon="/Logo IPO.png"
+        WindowStyle="SingleBorderWindow"
+        WindowState="Maximized"
+        ResizeMode="CanResizeWithGrip" FontWeight="Bold">
+
+    <Window.Resources>
+        <Storyboard x:Key="FadeOutStoryboard" AutoReverse="True">
+            <DoubleAnimation 
+                Storyboard.TargetName="MainGrid" 
+                Storyboard.TargetProperty="Opacity" 
+                From="1" To="0" 
+                Duration="0:0:1" />
+        </Storyboard>
+    </Window.Resources>
+
+    <Grid x:Name="Pantalla_principal" Width="1555">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="127*"/>
+            <ColumnDefinition Width="280*"/>
+        </Grid.ColumnDefinitions>
+    
+        <Image x:Name="Imagen" 
+               Source="/Logo IPO.png" 
+               Width="515" Height="528" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="419,194,0,0" Grid.Column="1" />
+
+        <TextBlock x:Name="lbl_op4" FontSize="20" Margin="28,459,1155,675" Text="• Es tu punto de partida para organizar todo de manera fácil y rápida. ¡Vamos a por ello!" Foreground="#FF020814" Grid.ColumnSpan="2"/>
+
+
+        <Label x:Name="Lbl_titulo" 
+               Content="GesstiFFest - Pantalla Principal" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="400,90,0,0"
+               FontSize="48" 
+               FontWeight="Bold" 
+               Foreground="#FF93C47D" Grid.ColumnSpan="2"/>
+
+        <TextBlock x:Name="Lbl_Descripcion" 
+               TextWrapping="Wrap"
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="92,194,0,0"
+               FontSize="20"
+               Foreground="#FF020814" 
+               Width="1370" Height="83"
+               Text="¡Esta es la pantalla principal de la aplicación, donde tendrás todo lo que necesitas al alcance de un clic!  Aquí podrás ver un resumen rápido de los festivales que estás organizando, los artistas confirmados y los escenarios disponibles. La idea es que tengas una visión general para que nada se te escape." Grid.ColumnSpan="2" />
+
+        <TextBlock x:Name="lbl_operaciones" 
+                   FontWeight="Bold" 
+                   FontSize="18" 
+                    
+                   Margin="173,369,393,332" Grid.ColumnSpan="2"><Run Text="Desde aquí puedes"/><Run Language="es-es" Text=" realizar ciertas operaciones"/><Run Text=":"/>
+
+
+        </TextBlock>
+        <TextBlock x:Name="lbl_op1" FontSize="17" Margin="190,435,792,295" Text="• Revisar qué festivales están en marcha o pendientes." Foreground="#FF020814" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="lbl_op2" FontSize="17" Margin="190,496,837,246" Text="• Gestionar artistas, escenarios y otros detalles." Foreground="#FF020814" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="lbl_op3" FontSize="17" Margin="190,558,834,178" Text="• Acceder a tu perfil y ver tu última actividad." Foreground="#FF020814" Grid.ColumnSpan="2"/>
+        <Grid Background="#3b5998" Grid.ColumnSpan="2" Margin="0,10,15,702">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+  
+                <ColumnDefinition Width="Auto" MinWidth="370"/>
+            </Grid.ColumnDefinitions>
+
+     
+            <StackPanel Orientation="Horizontal" Grid.Column="0" VerticalAlignment="Center" Margin="10,0,10,0" Height="65">
+                <Button x:Name="bt_Inicio" 
+                    Content="Inicio" 
+                    Background="DodgerBlue" 
+                    Foreground="White" 
+                    FontWeight="Bold" 
+                    Margin="5" 
+                    Width="260"
+                    Cursor="Hand" />
+                <Button x:Name="Gestion_fest" 
+                    Content="Gestión de Festivales" 
+                    Background="#FF4267B2" 
+                    Foreground="White" 
+                    FontWeight="Bold" 
+                    Margin="5" 
+                    Width="260"
+                    Cursor="Hand" Click="Gestion_fest_Click_2" />
+                <Button x:Name="bton_gestion_artistas" 
+                    Content="Gestión de Artistas" 
+                    Background="#4267B2" 
+                    Foreground="White" 
+                    FontWeight="Bold" 
+                    Margin="5" 
+                    Width="260"
+                    Cursor="Hand" Height="55" Click="bton_gestion_artistas_Click_1" />
+                <Button x:Name="btn_calendario" 
+                    Content="Calendario" 
+                    Background="#4267B2" 
+                    Foreground="White" 
+                    FontWeight="Bold" 
+                       
+                    Width="260"
+                    Cursor="Hand" Height="55" Click="btn_calendario_Click_1" />
+            </StackPanel>
+
+            <Border BorderBrush="White" BorderThickness="1" CornerRadius="8" Padding="5" Margin="95,10,30,10" Grid.Column="1">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+          
+                    <Image x:Name="Foto_persona" 
+                        Source="/Logo IPO.png" 
+                        Width="60" 
+                        Height="60" 
+                        VerticalAlignment="Center" 
+                        Margin="0,0,10,0" 
+                        Stretch="UniformToFill" />
+
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBox x:Name="txtNombreUsuario" 
+                            Text="Nombre Usuario" 
+                            FontSize="14" 
+                            FontWeight="Bold" 
+                            Foreground="White" 
+                            IsReadOnly="True" 
+                            Background="Transparent" 
+                            BorderThickness="0" 
+                            Margin="0,0,0,5" />
+                        <TextBox x:Name="txtUltimaConexion" 
+                            Text="Última conexión: --/--/-- --:-- PM" 
+                            FontSize="12" 
+                            Foreground="White" 
+                            IsReadOnly="True" 
+                            Background="Transparent" 
+                            BorderThickness="0" Height="17" Width="229" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            <Button Content="?" 
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Center" 
+                Width="45"
+                Height="50"
+                Margin="1090,0,0,0" 
+                FontSize="24" 
+                Background="LightBlue" 
+                BorderBrush="Blue" 
+                BorderThickness="2" Click="AyudaClick" RenderTransformOrigin="0.222,0.602" Grid.ColumnSpan="2" >
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" 
+                            BorderBrush="{TemplateBinding BorderBrush}" 
+                            BorderThickness="{TemplateBinding BorderThickness}" 
+                            Width="{TemplateBinding Width}" 
+                            Height="{TemplateBinding Height}" 
+                            CornerRadius="25">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button 
+                Content="🔐"
+                HorizontalAlignment="Left" 
+                VerticalAlignment="Center" 
+                Width="45"
+                Height="50"
+                Margin="40,0,0,0"
+                Background="LightBlue" 
+                BorderBrush="Blue" 
+                BorderThickness="2" 
+                Click="CerrarSesionClick" Grid.Column="1">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" 
+             BorderBrush="{TemplateBinding BorderBrush}" 
+             BorderThickness="{TemplateBinding BorderThickness}" 
+             Width="{TemplateBinding Width}" 
+             Height="{TemplateBinding Height}" 
+             CornerRadius="25">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+
+            </Button>
+
+
+        </Grid>
+
+
+
+
+    </Grid>
+</Window>

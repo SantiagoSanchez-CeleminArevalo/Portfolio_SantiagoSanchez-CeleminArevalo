@@ -1,0 +1,328 @@
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe.config
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.pdb
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.baml
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.g.cs
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\App.g.cs
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.cache
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.g.resources
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.exe
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.pdb
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.baml
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.g.cs
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.lref
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.g.cs
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.baml
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.g.cs
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.baml
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\GestionUsuarios.g.cs
+C:\Users\USUARIO\Desktop\UNIVERSIDAD\1º CUATRIMESTRE\IPO\Laboratorio\GesstiFFest\GesstiFFest\obj\Debug\GestionUsuarios.baml
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe.config
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.AssemblyReference.cache
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Escenarios.baml
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.baml
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.baml
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.baml
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Escenarios.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GestionUsuarios.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\App.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.cache
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.lref
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GestionUsuarios.baml
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.baml
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.g.resources
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.Properties.Resources.resources
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.GenerateResource.cache
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.CoreCompileInputs.cache
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.exe
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.pdb
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.pdb
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.baml
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe.config
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Escenarios.baml
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.baml
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.baml
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.baml
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.g.cs
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Escenarios.g.cs
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GestionUsuarios.g.cs
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.g.cs
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.g.cs
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.g.cs
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.g.cs
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\App.g.cs
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.cache
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.lref
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.baml
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GestionUsuarios.baml
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.baml
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.g.resources
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.exe
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.pdb
+C:\Users\USUARIO\Desktop\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.pdb
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe.config
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.pdb
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.AssemblyReference.cache
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Escenarios.baml
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GestionUsuarios.baml
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.baml
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.baml
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.baml
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Escenarios.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GestionUsuarios.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\App.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.cache
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.lref
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.baml
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.baml
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.g.resources
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.Properties.Resources.resources
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.GenerateResource.cache
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.CoreCompileInputs.cache
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.exe
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.pdb
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\IPO\Nuevo Archivo WinRAR ZIP\Nuevo Archivo WinRAR ZIP\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.baml
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe.config
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.pdb
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.baml
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.baml
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.baml
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.g.cs
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.g.cs
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.g.cs
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.g.cs
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.g.cs
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\App.g.cs
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.cache
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.lref
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.baml
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.baml
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.g.resources
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.Properties.Resources.resources
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.GenerateResource.cache
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.exe
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.pdb
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe.config
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.pdb
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.AssemblyReference.cache
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\App.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.cache
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.lref
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.g.resources
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.Properties.Resources.resources
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.GenerateResource.cache
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.CoreCompileInputs.cache
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.exe
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.pdb
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\Calendario.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\obj\Debug\Calendario.baml
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.baml
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\Calendario.g.cs
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.g.cs
+C:\Users\USUARIO\Desktop\GesstiFFest\GesstiFFest\obj\Debug\Calendario.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe.config
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.pdb
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Calendario.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\App.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.lref
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Calendario.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.g.resources
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.Properties.Resources.resources
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.exe
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.pdb
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe.config
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.pdb
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.AssemblyReference.cache
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Calendario.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\App.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.cache
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.lref
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Calendario.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.baml
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.g.resources
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.Properties.Resources.resources
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.GenerateResource.cache
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.CoreCompileInputs.cache
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.exe
+C:\Users\Marinita\OneDrive\Escritorio\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.pdb
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe.config
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.pdb
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Calendario.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\App.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.lref
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Calendario.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\Ventana_registro.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.g.resources
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.Properties.Resources.resources
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.exe
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.pdb
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe.config
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.pdb
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\Calendario.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\App.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.lref
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\Calendario.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.g.resources
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.Properties.Resources.resources
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.exe
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFest_Final\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.pdb
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe.config
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.pdb
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.AssemblyReference.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\Calendario.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\App.g.cs
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.lref
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\Calendario.baml
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.g.resources
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.Properties.Resources.resources
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.exe
+C:\Users\Usuario\Documents\UNIVERSIDAD\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.pdb
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe.config
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.exe
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\bin\Debug\GesstiFFest.pdb
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.AssemblyReference.cache
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.baml
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.baml
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.baml
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.baml
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\Calendario.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Artistas.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\Gestion_Festivales.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\Login_correcto.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\MainWindow.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\App.g.cs
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.cache
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest_MarkupCompile.lref
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\AddArtista.baml
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\AddFestival.baml
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\Calendario.baml
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.g.resources
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.Properties.Resources.resources
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.GenerateResource.cache
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.csproj.CoreCompileInputs.cache
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.exe
+C:\Users\Marinita\OneDrive\Escritorio\EntregaFinal\GesstiFFest\GesstiFFest\obj\Debug\GesstiFFest.pdb

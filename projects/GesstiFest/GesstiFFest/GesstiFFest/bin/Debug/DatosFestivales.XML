@@ -1,0 +1,171 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<festivales>
+  <festival>
+    <nombre>Winter Fest</nombre>
+    <fecha>05/12/2024</fecha>
+    <minimo>55</minimo>
+    <maximo>150</maximo>
+    <estado>Confirmado</estado>
+    <restriccion>Es obligatorio portar identificación.</restriccion>
+    <UrlFotoFest>WinterFest.jpg</UrlFotoFest>
+    <instagram>https://www.instagram.com/winterfest.es/</instagram>
+    <facebook>https://www.facebook.com/winterfestbarcelona/?locale=es_LA</facebook>
+    <twitter>https://x.com/WinterFestMF</twitter>
+    <escenarios>
+      <escenario>
+        <nombre>Escenario Principal</nombre>
+        <aforo>5000</aforo>
+        <UrlFotoEscen>PlanoDanceStage.png</UrlFotoEscen>
+      </escenario>
+      <escenario>
+        <nombre>Escenario Secundario</nombre>
+        <aforo>2000</aforo>
+        <UrlFotoEscen>PlanoMainStage.png</UrlFotoEscen>
+      </escenario>
+    </escenarios>
+  </festival>
+  <festival>
+    <nombre>Winter Fest</nombre>
+    <fecha>05/12/2025</fecha>
+    <minimo>78</minimo>
+    <maximo>190</maximo>
+    <estado>Confirmado</estado>
+    <restriccion>Es obligatorio portar identificación.</restriccion>
+    <UrlFotoFest>WinterFest.jpg</UrlFotoFest>
+    <instagram>https://www.instagram.com/winterfest.es/</instagram>
+    <facebook>https://www.facebook.com/winterfestbarcelona/?locale=es_LA</facebook>
+    <twitter>https://www.google.com/</twitter>
+    <escenarios>
+      <escenario>
+        <nombre>Escenario Main</nombre>
+        <aforo>5000</aforo>
+        <UrlFotoEscen>PlanoDanceStage.png</UrlFotoEscen>
+      </escenario>
+      <escenario>
+        <nombre>Escenario Second</nombre>
+        <aforo>3000</aforo>
+        <UrlFotoEscen>PlanoMainStage.png</UrlFotoEscen>
+      </escenario>
+    </escenarios>
+  </festival>
+  <festival>
+    <nombre>Medusa Festival</nombre>
+    <fecha>08/08/2024</fecha>
+    <minimo>50</minimo>
+    <maximo>150</maximo>
+    <estado>Confirmado</estado>
+    <restriccion>Es obligatorio portar identificación.</restriccion>
+    <UrlFotoFest>MedusaFest2024.jpg</UrlFotoFest>
+    <instagram>https://www.instagram.com/medusafestival/</instagram>
+    <facebook>https://www.facebook.com/MedusaFestivalOficial/</facebook>
+    <twitter>https://twitter.com/MedusaFestival</twitter>
+    <escenarios>
+      <escenario>
+        <nombre>HAUSEANDUJAR</nombre>
+        <aforo>76580</aforo>
+        <UrlFotoEscen>HAUSEANDUJAR.jpg</UrlFotoEscen>
+      </escenario>
+      <escenario>
+        <nombre>Escenario Medusa Sun</nombre>
+        <aforo>52300</aforo>
+        <UrlFotoEscen>Main.jpg</UrlFotoEscen>
+      </escenario>
+    </escenarios>
+  </festival>
+  <festival>
+    <nombre>Medusa Festival</nombre>
+    <fecha>08/08/2025</fecha>
+    <minimo>60</minimo>
+    <maximo>160</maximo>
+    <estado>Confirmado</estado>
+    <restriccion>Es obligatorio portar identificación.</restriccion>
+    <UrlFotoFest>MedusaFest2025.jpg</UrlFotoFest>
+    <instagram>https://www.instagram.com/medusafestival/</instagram>
+    <facebook>https://www.facebook.com/MedusaFestivalOficial/</facebook>
+    <twitter>https://twitter.com/MedusaFestival</twitter>
+    <escenarios>
+      <escenario>
+        <nombre>Escenario Principal</nombre>
+        <aforo>65000</aforo>
+        <UrlFotoEscen>HAUSEANDUJAR.jpg</UrlFotoEscen>
+      </escenario>
+      <escenario>
+        <nombre>Escenario Medusa Sunset</nombre>
+        <aforo>4500</aforo>
+        <UrlFotoEscen>Main.jpg</UrlFotoEscen>
+      </escenario>
+    </escenarios>
+  </festival>
+  <festival>
+    <nombre>Winter Fest</nombre>
+    <fecha>05/12/2025</fecha>
+    <minimo>78</minimo>
+    <maximo>190</maximo>
+    <estado>Confirmado</estado>
+    <restriccion>Es obligatorio portar identificación.</restriccion>
+    <UrlFotoFest>WinterFest.jpg</UrlFotoFest>
+    <instagram>https://www.instagram.com/winterfest.es/</instagram>
+    <facebook>https://www.facebook.com/winterfestbarcelona/?locale=es_LA</facebook>
+    <twitter>https://www.google.com/</twitter>
+    <escenarios>
+      <escenario>
+        <nombre>Escenario Main</nombre>
+        <aforo>5000</aforo>
+        <UrlFotoEscen>PlanoDanceStage.png</UrlFotoEscen>
+      </escenario>
+      <escenario>
+        <nombre>Escenario Second</nombre>
+        <aforo>3000</aforo>
+        <UrlFotoEscen>PlanoMainStage.png</UrlFotoEscen>
+      </escenario>
+    </escenarios>
+  </festival>
+  <festival>
+    <nombre>Zevra</nombre>
+    <fecha>20/08/2024</fecha>
+    <minimo>95</minimo>
+    <maximo>207</maximo>
+    <estado>Pasado</estado>
+    <restriccion>No se puede acceder con alcohol.</restriccion>
+    <UrlFotoFest>Zevra2024.jpg</UrlFotoFest>
+    <instagram>https://www.instagram.com/zevrafestival/</instagram>
+    <facebook>https://www.facebook.com/zevrafestival/</facebook>
+    <twitter>https://x.com/ZEVRAFestival</twitter>
+    <escenarios>
+      <escenario>
+        <nombre>Escenario Main</nombre>
+        <aforo>5000</aforo>
+        <UrlFotoEscen>PlanoDanceStage.png</UrlFotoEscen>
+      </escenario>
+      <escenario>
+        <nombre>Escenario Second</nombre>
+        <aforo>3000</aforo>
+        <UrlFotoEscen>PlanoMainStage.png</UrlFotoEscen>
+      </escenario>
+    </escenarios>
+  </festival>
+  <festival>
+    <nombre>Zevra</nombre>
+    <fecha>20/07/2025</fecha>
+    <minimo>80</minimo>
+    <maximo>190</maximo>
+    <estado>Confirmado</estado>
+    <restriccion>Es obligatorio portar identificación.</restriccion>
+    <UrlFotoFest>Zevra2025.jpg</UrlFotoFest>
+    <instagram>https://www.instagram.com/zevrafestival/</instagram>
+    <facebook>https://www.facebook.com/zevrafestival/</facebook>
+    <twitter>https://x.com/ZEVRAFestival</twitter>
+    <escenarios>
+      <escenario>
+        <nombre>Escenario Main</nombre>
+        <aforo>5000</aforo>
+        <UrlFotoEscen>PlanoDanceStage.png</UrlFotoEscen>
+      </escenario>
+      <escenario>
+        <nombre>Escenario Second</nombre>
+        <aforo>3000</aforo>
+        <UrlFotoEscen>PlanoMainStage.png</UrlFotoEscen>
+      </escenario>
+    </escenarios>
+  </festival>
+</festivales>
