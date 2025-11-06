@@ -1,0 +1,14 @@
+package Dominio;
+
+
+import Interfaz_Servidor.IU_ClasificacionServidor;
+
+public class Propuesta_Clasificacion {
+	private String _dato;
+	private CategoriaClasificacion _categoria;
+	public IU_ClasificacionServidor _unnamed_IU_ClasificacionServidor_;
+
+	public void PropuestaClasificacion(String aDato, CategoriaClasificacion aCategoria) {
+		throw new UnsupportedOperationException();
+	}
+}

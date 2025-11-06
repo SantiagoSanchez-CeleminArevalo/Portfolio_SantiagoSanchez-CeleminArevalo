@@ -1,0 +1,308 @@
+﻿<Window x:Class="GesstiFFest.Gestion_Artistas"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="GesstiFFest Gestión Artistas" 
+        Background="#f0f0f0" 
+        Icon="Fotos/Logo IPO.png"
+        ResizeMode="CanResize"
+        WindowState="Maximized"
+        WindowStyle="SingleBorderWindow"
+        FontWeight="Bold" Height="834">
+
+    <Grid Height="888">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Grid Background="#3b5998" Margin="0,10,0,708">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+
+                <ColumnDefinition Width="Auto" MinWidth="370"/>
+
+            </Grid.ColumnDefinitions>
+
+
+            <StackPanel Orientation="Horizontal" Grid.Column="0" VerticalAlignment="Center" Margin="10,0,10,0" Height="65">
+                <Button x:Name="bt_Inicio" 
+        Content="Inicio" 
+        Background="#FF4267B2" 
+        Foreground="White" 
+        FontWeight="Bold" 
+        Margin="5" 
+        Width="260"
+        Cursor="Hand" Click="bt_Inicio_Click_1" />
+                <Button x:Name="Gestion_fest" 
+        Content="Gestión de Festivales" 
+        Background="#FF4267B2" 
+        Foreground="White" 
+        FontWeight="Bold" 
+        Margin="5" 
+        Width="260"
+        Cursor="Hand" Click="Gestion_fest_Click" />
+                <Button x:Name="bton_gestion_artistas" 
+        Content="Gestión de Artistas" 
+        Background="DodgerBlue" 
+        Foreground="White" 
+        FontWeight="Bold" 
+        Margin="5" 
+        Width="260"
+        Cursor="Hand" Height="55" Click="bton_gestion_artistas_Clic" />
+                <Button x:Name="btn_calendario" 
+        Content="Calendario" 
+        Background="#4267B2" 
+        Foreground="White" 
+        FontWeight="Bold" 
+                        Margin="5"
+        Width="260"
+        Cursor="Hand" Height="55" Click="btn_calendario_Click" />
+            </StackPanel>
+
+
+            <Border BorderBrush="White" BorderThickness="1" CornerRadius="8" Padding="5" Margin="40,10,30,10" Grid.Column="1">
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+
+                    <Image x:Name="Foto_persona" 
+           Source="/Logo IPO.png" 
+           Width="60" 
+           Height="60" 
+           VerticalAlignment="Center" 
+           Margin="0,0,10,0" 
+           Stretch="UniformToFill" />
+
+
+                    <StackPanel VerticalAlignment="Center">
+                        <TextBox x:Name="txtNombreUsuario" 
+                 Text="Nombre Usuario" 
+                 FontSize="14" 
+                 FontWeight="Bold" 
+                 Foreground="White" 
+                 IsReadOnly="True" 
+                 Background="Transparent" 
+                 BorderThickness="0" 
+                 Margin="0,0,0,5" />
+                        <TextBox x:Name="txtUltimaConexion" 
+                 Text="Última conexión: --/--/-- --:-- PM" 
+                 FontSize="12" 
+                 Foreground="White" 
+                 IsReadOnly="True" 
+                 Background="Transparent" 
+                 BorderThickness="0" Height="17" Width="229" />
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            <Button Content="?" 
+VerticalAlignment="Top"
+                    Width="45"
+Height="50" 
+Margin="1072,20,0,0" 
+FontSize="24" 
+Background="LightBlue" 
+BorderBrush="Blue" 
+BorderThickness="2" Click="AyudaClick" >
+                <Button.Template>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" 
+            BorderBrush="{TemplateBinding BorderBrush}" 
+            BorderThickness="{TemplateBinding BorderThickness}" 
+            Width="{TemplateBinding Width}" 
+            Height="{TemplateBinding Height}" 
+            CornerRadius="25">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+            <Button Content="🔐" 
+                    HorizontalAlignment="Right" 
+VerticalAlignment="Center" 
+Width="44"
+Height="50"
+Background="LightBlue" 
+BorderBrush="Blue" 
+BorderThickness="2" 
+Click="CerrarSesionClick" Margin="0,0,348,0" Grid.ColumnSpan="2">
+                <Button.Template>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border Background="{TemplateBinding Background}" 
+BorderBrush="{TemplateBinding BorderBrush}" 
+BorderThickness="{TemplateBinding BorderThickness}" 
+Width="{TemplateBinding Width}" 
+Height="{TemplateBinding Height}" 
+CornerRadius="25">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center" />
+                        </Border>
+                    </ControlTemplate>
+                </Button.Template>
+            </Button>
+
+        </Grid>
+
+
+
+        <Grid Margin="20,107,-59,-27" Grid.RowSpan="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <ListView x:Name="listViewArtistas" 
+          Margin="22,159,15,282" 
+          Width="300"
+          Background="#E7EFF6" 
+          BorderBrush="#D1D1D6" 
+                      SelectionMode="Single"
+          SelectionChanged="ListViewArtistas_SelectionChanged"
+          BorderThickness="1">
+
+                <ListView.View>
+                    <GridView>
+
+                        <GridViewColumn Header="Imagen" Width="100">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Grid Width="100" Height="100" VerticalAlignment="Center" HorizontalAlignment="Center">
+                                        <Image Source="{Binding ImagenUrl}" 
+                                   VerticalAlignment="Center" 
+                                   HorizontalAlignment="Center" 
+                                   Width="80" Height="80" 
+                                   Stretch="Uniform"/>
+                                    </Grid>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+
+                        <GridViewColumn Header="Artista" 
+                            DisplayMemberBinding="{Binding Artista_fest}" 
+                            Width="180"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+
+            <Button Content="ADD +" Background="#4CAF50" Foreground="White" Height="50" Width="125" Click="Add_Click" Margin="106,571,106,187"/>
+
+            <TextBlock Text="FESTIVAL" FontSize="20" FontWeight="Bold" Foreground="#4267B2" Margin="40,32,20,654"/>
+            <TextBlock Text="EDICIÓN" FontSize="20" FontWeight="Bold" Foreground="#4267B2" Margin="40,74,231,559"/>
+
+            <StackPanel Grid.Row="0" Grid.Column="1" Margin="58,28,649,109" Background="White" RenderTransformOrigin="0.5,0.5">
+                <StackPanel.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="0.166"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.797"/>
+                    </TransformGroup>
+                </StackPanel.RenderTransform>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="0,0,0,20">
+
+                    <TextBlock Text="Detalles del Artista" 
+   FontSize="20" 
+   FontWeight="Bold" 
+   Foreground="#4267B2" 
+   VerticalAlignment="Center"/>
+
+
+                    <Rectangle Width="10" Fill="Transparent"/>
+
+
+                    <Button Width="24" Height="24" Margin="5,0" Background="Transparent" BorderThickness="0" ToolTip="Editar" Click="Modificar_Click">
+                        <Image Source="Editar.png" Stretch="Uniform"/>
+                    </Button>
+
+                    <Button Width="24" Height="24" Margin="5,0" Background="Transparent" BorderThickness="0" ToolTip="Eliminar" Click="DarBaja_Click">
+                        <Image Source="Papelera.png" Stretch="Uniform"/>
+                    </Button>
+                </StackPanel>
+                <TextBlock Text="Nombre/s: " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtArtistaNombre" Margin="0,0,0,0" Background="#F8F8F8" SelectionTextBrush="Black" Height="24" Width="510" TextChanged="txtArtistaNombre_TextChanged"/>
+
+                <TextBlock Text="Género/s musical/es: " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtArtistaGenero" Margin="0,0,0,0" Background="#F8F8F8" SelectionTextBrush="#FF160000" Height="24" Width="510" TextChanged="txtArtistaGenero_TextChanged"/>
+
+                <TextBlock Text="Biografía: " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtArtistaBiografia" Margin="0,0,0,0" Background="#F8F8F8" SelectionTextBrush="#FF0B0000" Height="96" Width="510" TextChanged="txtArtistaBiografia_TextChanged"/>
+
+
+                <TextBlock Text="Dirección: " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtDireccion" Margin="0,0,0,0" Background="#F8F8F8" Width="510" Height="24" SelectionTextBrush="Black" TextChanged="txtDireccion_TextChanged"/>
+                <TextBlock Text="Teléfono Móvil: " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtTelefono" Margin="0,0,0,0" Width="510" Background="#F8F8F8" SelectionTextBrush="Black" Height="24" TextChanged="txtTelefono_TextChanged"/>
+
+                <TextBlock Text="Correo Electrónico: " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtCorreo" Margin="0,0,0,0" Width="510" Background="#F8F8F8" SelectionTextBrush="Black" Height="24" TextChanged="txtCorreo_TextChanged"/>
+
+                <TextBlock Text="Estado" FontWeight="Bold" Margin="10"/>
+                <ComboBox x:Name="cmbEstadoArtista" Width="510" Margin="0,0,0,0" SelectionChanged="cmbEstadoArtista_SelectionChanged" Height="24">
+                    <ComboBoxItem Content="Pendiente"/>
+                    <ComboBoxItem Content="Confirmado"/>
+                    <ComboBoxItem Content="Cancelado"/>
+                </ComboBox>
+
+            </StackPanel>
+
+            <TextBox x:Name="BoxFest" Margin="158,30,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" TextChanged="BoxFest_TextChanged" IsReadOnly="True" BorderBrush="White" FontSize="14" HorizontalAlignment="Left" Height="34"/>
+            <TextBox x:Name="TextEdic" HorizontalAlignment="Left" Margin="158,69,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" TextChanged="TextEdic_TextChanged" IsReadOnly="True" BorderBrush="White" FontSize="14" Height="34"/>
+
+            <StackPanel Grid.Column="1" Margin="652,30,77,111" Background="White">
+                <TextBlock Text="INFORMACIÓN CONTACTO: " FontWeight="Bold" Margin="10,15"/>
+                <TextBlock Text="Teléfono Manager: " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtManagerContacto" Margin="0,0,0,0" Background="#F8F8F8" SelectionTextBrush="Black" Height="24" Width="485" TextChanged="txtManagerContacto_TextChanged"/>
+                <TextBlock Text="Correo Manager: " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtManagerCorreo" Margin="0,0,0,0" Background="#F8F8F8" SelectionTextBrush="Black" Height="24" Width="485" TextChanged="txtManagerCorreo_TextChanged"/>
+
+
+                <TextBlock Text="Redes Sociales: " FontWeight="Bold" Margin="10"/>
+                <StackPanel Orientation="Vertical" Margin="5">
+
+                    <StackPanel Orientation="Horizontal" Margin="5">
+
+                        <Button Width="40" Height="40" Margin="5" Background="Transparent" Click="Facebook_Click">
+                            <Image x:Name="Facebook" Source= "IconosRedSocial/Facebook.png" Width="30" Height="30" RenderTransformOrigin="0.5,0.507" />
+                        </Button>
+
+
+                        <Button x:Name="Instagram" Width="40" Height="40" Margin="5" Background="Transparent" Click="Instagram_Click">
+                            <Image Source="IconosRedSocial\Insta.jpg" Width="30" Height="30" />
+                        </Button>
+
+
+
+                        <Button Width="40" Height="40" Margin="5" Background="Transparent" Click="Twitter_Click">
+                            <Image Source="IconosRedSocial\X.jpg" Width="30" Height="30" />
+                        </Button>
+                    </StackPanel>
+
+
+
+                </StackPanel>
+
+                <TextBlock Text="REQUISITOS: " FontWeight="Bold" Margin="10,10,0,0"/>
+                <TextBlock Text="Precio (€): " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtPrecio" Margin="0,0,0,0" Width="485" Height="24" Background="#F8F8F8" SelectionTextBrush="Black" TextChanged="txtPrecio_TextChanged"/>
+                <TextBlock Text="Lugar Alojamiento: " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtAlojamiento" Margin="0,0,0,0" Width="485" Height="24" Background="#F8F8F8" SelectionTextBrush="Black" TextChanged="txtAlojamiento_TextChanged"/>
+                <TextBlock Text="Peticiones especiales: " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtPeticiones" Margin="0,0,0,0" Width="485" Height="50" Background="#F8F8F8" SelectionTextBrush="Black" TextChanged="txtPeticiones_TextChanged"/>
+
+                <TextBlock Text="ACTUACIÓN: " FontWeight="Bold" Margin="10,10,0,0"/>
+                <TextBlock Text="Escenario: " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtEscenario" Margin="0,0,0,0" Width="485" Height="24" Background="#F8F8F8" SelectionTextBrush="Black" TextChanged="txtEscenario_TextChanged"/>
+                <TextBlock Text="Hora: " FontWeight="Bold" Margin="10"/>
+                <TextBox x:Name="txtHora" Margin="0,0,0,0" Width="485" Height="24" Background="#F8F8F8" SelectionTextBrush="Black" TextChanged="txtHora_TextChanged"/>
+
+
+
+            </StackPanel>
+            <Rectangle HorizontalAlignment="Left" Height="34" Margin="157,30,0,0" Stroke="Black" VerticalAlignment="Top" Width="144" />
+            <Rectangle HorizontalAlignment="Left" Height="34" Margin="157,69,0,0" Stroke="Black" VerticalAlignment="Top" Width="144"/>
+            <Rectangle HorizontalAlignment="Left" Height="34" Margin="30,69,0,0" Stroke="Black" VerticalAlignment="Top" Width="128"/>
+            <Rectangle HorizontalAlignment="Left" Height="34" Margin="30,30,0,0" Stroke="Black" VerticalAlignment="Top" Width="128"/>
+
+        </Grid>
+    </Grid>
+</Window>

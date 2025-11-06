@@ -1,0 +1,178 @@
+﻿<Window x:Class="GesstiFFest.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        Title="GesstiFFest Iniciar Sesión"
+        Background="#f0f0f0"
+        Icon="Fotos/Logo IPO.png"
+        ResizeMode="CanResizeWithGrip"
+        WindowStyle="SingleBorderWindow"
+        WindowState="Maximized">
+    <Grid x:Name="___Ventana_login_" Width="1620" Height="905">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="85*"/>
+            <ColumnDefinition Width="1418*"/>
+            <ColumnDefinition Width="63*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="27*"/>
+            <ColumnDefinition Width="27*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Image x:Name="Imagen" 
+               Source="/Logo IPO.png" 
+               Width="1122" Height="832" 
+               HorizontalAlignment="Left" 
+               Margin="-22,63,0,0" 
+               VerticalAlignment="Top" Grid.ColumnSpan="2"/>
+
+        <Border BorderBrush="Black" 
+                BorderThickness="1" 
+                HorizontalAlignment="Left" 
+                Margin="880,257,0,0" 
+                VerticalAlignment="Top" 
+                Width="485" 
+                Padding="10" 
+                CornerRadius="10" Height="498" Grid.Column="1">
+            <Grid x:Name="LoginControlsGroup" Margin="27,-11,28,11">
+               <Label x:Name="Llb_Inicia_sesion" 
+                   Content="Inicia sesión" 
+                   HorizontalAlignment="Center" 
+                   VerticalAlignment="Top"
+                   FontSize="36" 
+                   Foreground="#FF2B78FF" 
+                   FontWeight="Bold" Margin="0,10,0,0"/>
+
+                <Label x:Name="lbl_Correo" 
+                   Content="Correo Electrónico:" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="15,96,0,0" 
+                   Foreground="#FF020814" 
+                   FontWeight="Bold" FontSize="20"/>
+
+                <TextBox x:Name="Txt_box_Correo" 
+                     HorizontalAlignment="Center" 
+                     VerticalAlignment="Top" 
+                     Margin="10,133,0,0" 
+                     Width="378" 
+                     Height="43" 
+                     FontSize="14" 
+                     FontWeight="Bold"
+                     Cursor="Pen"  
+                     KeyDown="Txt_box_Correo_KeyDown"/>
+
+                <Label x:Name="Lbl_Contraseña" 
+                   Content="Contraseña:" 
+                   HorizontalAlignment="Left" 
+                   VerticalAlignment="Top" 
+                   Margin="15,196,0,0" 
+                   Foreground="#FF020814" 
+                   FontWeight="Bold" FontSize="20" RenderTransformOrigin="0.626,3.39"/>
+
+          
+                <PasswordBox x:Name="txt_box_Contraseña" 
+                         HorizontalAlignment="Center" 
+                         VerticalAlignment="Top" 
+                         Margin="10,238,0,0" 
+                         Width="378" 
+                         Height="43" 
+                     
+                         Cursor="Pen"
+                         PasswordChar="*"
+                         IsEnabled="False"/>
+               
+                <TextBlock x:Name="He_olvidado_mi_contraseña" 
+        HorizontalAlignment="Left" 
+        VerticalAlignment="Top" 
+        Margin="20,282,0,0" Width="238" FontSize="16"><Hyperlink NavigateUri="#" 
+            Foreground="Blue"
+            Click="Hyperlink_Click"><Run Text="He olvidado mi contraseña"/></Hyperlink></TextBlock>
+
+                
+                <Button x:Name="btn_acceder" 
+                    Content="Acceder" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="107,350,0,0" 
+                    Width="189" Height="78"
+                    Background="Blue" 
+                    Foreground="White" 
+                    FontSize="16" 
+                    Click="btn_acceder_Click"
+                    Cursor="Hand" RenderTransformOrigin="0.5,0.5">
+                    <Button.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform AngleY="0.362"/>
+                            <RotateTransform/>
+                            <TranslateTransform Y="1.194"/>
+                        </TransformGroup>
+                    </Button.RenderTransform>
+                   
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}" 
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="15">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+
+
+
+           
+                <Button x:Name="btn_registrarse" 
+                    Content="Registrarse" 
+                    HorizontalAlignment="Left" 
+                    VerticalAlignment="Top" 
+                    Margin="219,337,0,0" 
+                    Width="189" Height="80"
+                    Background="Green" 
+                    Foreground="White" 
+                    FontSize="16"
+                    Cursor="Hand" 
+                        Visibility="Hidden"
+                    Click="btn_registrarse_Click">
+                   
+                    <Button.Template>
+                        <ControlTemplate TargetType="{x:Type Button}">
+                            <Border Background="{TemplateBinding Background}" 
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                BorderThickness="{TemplateBinding BorderThickness}" 
+                                CornerRadius="15">
+                                <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                            </Border>
+                        </ControlTemplate>
+                    </Button.Template>
+                </Button>
+            </Grid>
+        </Border>
+
+    
+        <Label x:Name="Titulo" 
+               Content="GesstiFFest" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top" 
+               Margin="475,10,0,0"
+               FontSize="72" 
+               FontWeight="Bold" 
+               Foreground="#FF93C47D" Grid.Column="1"/>
+
+       
+        <Label x:Name="Subtitulo" 
+               Content="Gestión de festivales de música" 
+               HorizontalAlignment="Left" 
+               VerticalAlignment="Top"
+               Margin="320,116,0,0"
+               FontSize="48" 
+               Foreground="#FF2B78FF" 
+               FontWeight="Bold" Grid.Column="1"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<usuarios>
+  <usuario>
+    <correo>Santiago.Sanchez12@alu.uclm.es</correo>
+    <contraseña>SoySantiago</contraseña>
+    <nombre>Santiago Sánchez-Celemín Arévalo</nombre>
+    <direccion>Calle Conta 44</direccion>
+    <codigoPostal>45880</codigoPostal>
+    <UrlFoto>FotosParticipantes\foto_santi.jpg</UrlFoto>
+    <ultimaConexion>2024-12-27 16:38:51</ultimaConexion>
+  </usuario>
+  <usuario>
+    <correo>Marina.Sobrino@alu.uclm.es</correo>
+    <contraseña>SoyMarina</contraseña>
+    <nombre>Marina Sobrino Blanco</nombre>
+    <direccion>De las cañas 4</direccion>
+    <codigoPostal>13004</codigoPostal>
+    <UrlFoto>FotosParticipantes\foto_marina.jpg</UrlFoto>
+    <ultimaConexion>2025-01-07 23:31:52</ultimaConexion>
+  </usuario>
+  <usuario>
+    <correo>Ines.Granja@alu.uclm.es</correo>
+    <contraseña>SoyInes</contraseña>
+    <nombre>Ines De la Granja Gallardo</nombre>
+    <direccion>Ronda Conta 44</direccion>
+    <codigoPostal>13004</codigoPostal>
+    <UrlFoto>FotosParticipantes\foto_ines.jpg</UrlFoto>
+    <ultimaConexion>2025-01-07 18:21:10</ultimaConexion>
+  </usuario>
+</usuarios>

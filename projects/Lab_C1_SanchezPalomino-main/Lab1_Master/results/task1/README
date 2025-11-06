@@ -1,0 +1,3 @@
+En esta tarea, compilamos y ejecutamos el programa matmul.cpp utilizando el compilador g++ con las opciones -g, -O0 y -fopenmp para incluir información de depuración, desactivar optimizaciones y habilitar el soporte para OpenMP. 
+
+Tras la compilación, ejecutamos el programa y guardamos los resultados de la ejecución como task1.txt.

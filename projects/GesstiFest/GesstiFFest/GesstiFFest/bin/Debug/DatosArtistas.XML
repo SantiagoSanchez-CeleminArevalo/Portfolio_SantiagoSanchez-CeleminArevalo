@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Festivales>
+  <Festival nombre="Winter Fest">
+    <Artista>
+      <Nombre>Winter Fest</Nombre>
+      <Fecha>05/12/2024</Fecha>
+      <Artista_fest>Aitana Ocaña</Artista_fest>
+      <Genero>Pop</Genero>
+      <Biografia>Aitana es una cantante y actriz española, nacida el 27 de noviembre de 1999 en 
+    San Clemente, Cuenca. Se hizo famosa tras participar en la primera temporada del 
+    programa de televisión "Operación Triunfo" en 2017, donde quedó en el segundo lugar.</Biografia>
+      <telfManager>453926758</telfManager>
+      <correoManager>JorgeEscobedo@gmail.com</correoManager>
+      <Estado>Pendiente</Estado>
+      <Insta>https://www.instagram.com/aitanax/</Insta>
+      <Face>https://www.facebook.com/aitanax/</Face>
+      <Twt>https://x.com/Aitanax</Twt>
+      <Direccion>Calle Esperanza, 24, Madrid</Direccion>
+      <telArtista>356285716</telArtista>
+      <correoArtista>aitanix@gmail.com</correoArtista>
+      <Precio>5000</Precio>
+      <LugarAlojamiento>Hotel Juventud</LugarAlojamiento>
+      <PeticionesEspeciales>Ninguna</PeticionesEspeciales>
+      <Escenario>Escenario Principal</Escenario>
+      <hora>22:00</hora>
+      <ImagenUrl>Aitana.jpg</ImagenUrl>
+    </Artista>
+    <Artista>
+      <Nombre>Winter Fest</Nombre>
+      <Fecha>05/12/2024</Fecha>
+      <Artista_fest>Post Malone</Artista_fest>
+      <Genero>Rock</Genero>
+      <Biografia>Post Malone, cuyo nombre real es Austin Richard Post, 
+nació el 4 de julio de 1995 en Syracuse, Nueva York. 
+Es un cantante, rapero y compositor estadounidense conocido por 
+su estilo único que fusiona géneros como el rap, y sobre todo rock.</Biografia>
+      <telfManager>637295168</telfManager>
+      <correoManager>MitchGale@gamil.com</correoManager>
+      <Estado>Confirmado</Estado>
+      <Insta>https://www.instagram.com/postmalone/</Insta>
+      <Face>https://www.facebook.com/postmalone/about/</Face>
+      <Twt>https://x.com/PostMalone</Twt>
+      <Direccion>Calle Ruerta, 58, Miami</Direccion>
+      <telArtista>638856415</telArtista>
+      <correoArtista>poostmalone@gmail.com</correoArtista>
+      <Precio>2000</Precio>
+      <LugarAlojamiento>Hotel Estrella</LugarAlojamiento>
+      <PeticionesEspeciales>Comida Vegana</PeticionesEspeciales>
+      <Escenario>Escenario Principal</Escenario>
+      <hora>23:00</hora>
+      <ImagenUrl>PostMalone.jpg</ImagenUrl>
+    </Artista>
+    <Artista>
+      <Nombre>Winter Fest</Nombre>
+      <Fecha>05/12/2024</Fecha>
+      <Artista_fest>Ed Sheeran</Artista_fest>
+      <Genero>Pop</Genero>
+      <Biografia>Ed Sheeran es un cantante, compositor y guitarrista británico conocido 
+por éxitos como "Shape of You".</Biografia>
+      <telfManager>384759201</telfManager>
+      <correoManager>TomSimpson@gmail.com</correoManager>
+      <Estado>Confirmado</Estado>
+      <Insta>https://www.instagram.com/teddysphotos/</Insta>
+      <Face>https://www.facebook.com/EdSheeranMusic/</Face>
+      <Twt>https://x.com/edsheeran/status/1514216432816599040</Twt>
+      <Direccion>Calle Londres, 50, Inglaterra</Direccion>
+      <telArtista>492837465</telArtista>
+      <correoArtista>edmusic@gmail.com</correoArtista>
+      <Precio>12000</Precio>
+      <LugarAlojamiento>Hotel Victoria</LugarAlojamiento>
+      <PeticionesEspeciales>Zona tranquila</PeticionesEspeciales>
+      <Escenario>Escenario Principal</Escenario>
+      <hora>24:00</hora>
+      <ImagenUrl>EdSheeran.jpg</ImagenUrl>
+    </Artista>
+    <Artista>
+      <Nombre>Winter Fest</Nombre>
+      <Fecha>05/12/2024</Fecha>
+      <Artista_fest>Dua Lipa</Artista_fest>
+      <Genero>Pop</Genero>
+      <Biografia>Dua Lipa es una cantante británica de origen kosovar conocida por temas como "Levitating".</Biografia>
+      <telfManager>567893214</telfManager>
+      <correoManager>EmilyBrown@gmail.com</correoManager>
+      <Estado>Confirmado</Estado>
+      <Insta>https://www.instagram.com/dualipa/</Insta>
+      <Face>https://www.facebook.com/DuaLipa/</Face>
+      <Twt>https://x.com/dualipa</Twt>
+      <Direccion>Calle Pristina, 80, Londres</Direccion>
+      <telArtista>567894321</telArtista>
+      <correoArtista>dualipamusic@gmail.com</correoArtista>
+      <Precio>10000</Precio>
+      <LugarAlojamiento>Hotel Brillante</LugarAlojamiento>
+      <PeticionesEspeciales>Alimentos veganos</PeticionesEspeciales>
+      <Escenario>Escenario Principal</Escenario>
+      <hora>01:00</hora>
+      <ImagenUrl>DuaLipa.jpg</ImagenUrl>
+    </Artista>
+    <Artista>
+      <Nombre>Winter Fest</Nombre>
+      <Fecha>05/12/2024</Fecha>
+      <Artista_fest>Imagine Dragons</Artista_fest>
+      <Genero>Rock</Genero>
+      <Biografia>Imagine Dragons es una banda de rock estadounidense 
+formada en 2008 en Las Vegas, Nevada. 
+Es conocida por su estilo ecléctico que mezcla 
+rock, pop y música electrónica.</Biografia>
+      <telfManager>456893124</telfManager>
+      <correoManager>DanielKurtz@gmail.com</correoManager>
+      <Estado>Confirmado</Estado>
+      <Insta>https://www.instagram.com/imaginedragons/</Insta>
+      <Face>https://www.facebook.com/ImagineDragons/</Face>
+      <Twt>https://x.com/Imaginedragons</Twt>
+      <Direccion>Calle Luna, 12, Las Vegas</Direccion>
+      <telArtista>458736829</telArtista>
+      <correoArtista>imagineDragons@gmail.com</correoArtista>
+      <Precio>8000</Precio>
+      <LugarAlojamiento>Hotel Oasis</LugarAlojamiento>
+      <PeticionesEspeciales>Escenario grande</PeticionesEspeciales>
+      <Escenario>Escenario Secundario</Escenario>
+      <hora>17:00</hora>
+      <ImagenUrl>ImagineDragons.jpg</ImagenUrl>
+    </Artista>
+    <Artista>
+      <Nombre>Winter Fest</Nombre>
+      <Fecha>05/12/2024</Fecha>
+      <Artista_fest>Billie Eilish</Artista_fest>
+      <Genero>Pop</Genero>
+      <Biografia>Billie Eilish es una cantante y compositora estadounidense 
+nacida en Los Ángeles en 2001. 
+Es conocida por su estilo musical experimental 
+que mezcla pop, electropop y música alternativa.</Biografia>
+      <telfManager>376520981</telfManager>
+      <correoManager>KevinDavis@gmail.com</correoManager>
+      <Estado>Confirmado</Estado>
+      <Insta>https://www.instagram.com/billieeilish/</Insta>
+      <Face>https://www.facebook.com/billieeilish/</Face>
+      <Twt>https://x.com/billieeilish</Twt>
+      <Direccion>Calle Santa Monica, 56, Los Ángeles</Direccion>
+      <telArtista>947632014</telArtista>
+      <correoArtista>billieeilishmusic@gmail.com</correoArtista>
+      <Precio>9000</Precio>
+      <LugarAlojamiento>Hotel Sol</LugarAlojamiento>
+      <PeticionesEspeciales>Escenario grande</PeticionesEspeciales>
+      <Escenario>Escenario Secundario</Escenario>
+      <hora>19:30</hora>
+      <ImagenUrl>BillieEilish.jpg</ImagenUrl>
+    </Artista>
+    <Artista>
+      <Nombre>Winter Fest</Nombre>
+      <Fecha>05/12/2024</Fecha>
+      <Artista_fest>Taylor Swift</Artista_fest>
+      <Genero>Pop</Genero>
+      <Biografia>Taylor Swift es una cantante, compositora y actriz estadounidense conocida por sus múltiples éxitos y álbumes icónicos.</Biografia>
+      <telfManager>748293645</telfManager>
+      <correoManager>ScottBraun@gmail.com</correoManager>
+      <Estado>Confirmado</Estado>
+      <Insta>https://www.instagram.com/taylorswift/</Insta>
+      <Face>https://www.facebook.com/TaylorSwift/</Face>
+      <Twt>https://x.com/taylorswift13/status/1587420273325838336</Twt>
+      <Direccion>Calle Broadway, 100, Nueva York</Direccion>
+      <telArtista>759283640</telArtista>
+      <correoArtista>taylormusic@gmail.com</correoArtista>
+      <Precio>15000</Precio>
+      <LugarAlojamiento>Hotel Empire</LugarAlojamiento>
+      <PeticionesEspeciales>Vestidor privado</PeticionesEspeciales>
+      <Escenario>Escenario Principal</Escenario>
+      <hora>02:00</hora>
+      <ImagenUrl>Taylor.jpg</ImagenUrl>
+    </Artista>
+  </Festival>
+  <Festival nombre="Medusa Festival">
+    <Artista>
+      <Nombre>Medusa Festival</Nombre>
+      <Fecha>08/08/2025</Fecha>
+      <Artista_fest>Hardwell</Artista_fest>
+      <Genero>EDM</Genero>
+      <Biografia>Hardwell es un DJ y productor musical neerlandés 
+especializado en música electrónica de baile. 
+Es conocido por su enérgico estilo y 
+su trabajo en los géneros de big room house y progressive house.</Biografia>
+      <telfManager>327498675</telfManager>
+      <correoManager>HardwellManagement@gmail.com</correoManager>
+      <Estado>Confirmado</Estado>
+      <Insta>https://www.instagram.com/hardwell/</Insta>
+      <Face>https://www.facebook.com/djhardwell/</Face>
+      <Twt>https://x.com/HARDWELL</Twt>
+      <Direccion>Calle Ámsterdam, 45, Países Bajos</Direccion>
+      <telArtista>375647290</telArtista>
+      <correoArtista>hardwellmusic@gmail.com</correoArtista>
+      <Precio>12000</Precio>
+      <LugarAlojamiento>Hotel Medusa</LugarAlojamiento>
+      <PeticionesEspeciales>Transporte privado</PeticionesEspeciales>
+      <Escenario>Escenario Principal</Escenario>
+      <hora>22:30</hora>
+      <ImagenUrl>Hardwell.jpg</ImagenUrl>
+    </Artista>
+    <Artista>
+      <Nombre>Medusa Festival</Nombre>
+      <Fecha>08-08-2025</Fecha>
+      <Artista_fest>Martin Garrix</Artista_fest>
+      <Genero>EDM</Genero>
+      <Biografia>Martin Garrix es un DJ y productor de música electrónica neerlandés. 
+Se ha ganado el reconocimiento mundial con 
+su estilo melódico y progresivo.</Biografia>
+      <telfManager>327498675</telfManager>
+      <correoManager>MartinGarrixManagement@gmail.com</correoManager>
+      <Estado>Confirmado</Estado>
+      <Insta>https://www.instagram.com/martingarrix/</Insta>
+      <Face>https://www.facebook.com/martingarrixofficial/</Face>
+      <Twt>https://x.com/MartinGarrix</Twt>
+      <Direccion>Calle Ámsterdam, 25, Países Bajos</Direccion>
+      <telArtista>365293047</telArtista>
+      <correoArtista>martingarrixmusic@gmail.com</correoArtista>
+      <Precio>15000</Precio>
+      <LugarAlojamiento>Hotel Medusa</LugarAlojamiento>
+      <PeticionesEspeciales>Rider técnico completo</PeticionesEspeciales>
+      <Escenario>Escenario Medusa Fun</Escenario>
+      <hora>20:00</hora>
+      <ImagenUrl>MartinGarris.jpg</ImagenUrl>
+    </Artista>
+    <Artista>
+      <Nombre>Medusa Festival</Nombre>
+      <Fecha>08/08/2024</Fecha>
+      <Artista_fest>David Guetta</Artista_fest>
+      <Genero>EDM</Genero>
+      <Biografia>David Guetta es un DJ y productor francés 
+de música electrónica. Ha sido uno de los nombres 
+más importantes en la música dance mundial.</Biografia>
+      <telfManager>438749563</telfManager>
+      <correoManager>DavidGuettaManagement@gmail.com</correoManager>
+      <Estado>Confirmado</Estado>
+      <Insta>https://www.instagram.com/davidguetta/</Insta>
+      <Face>https://www.facebook.com/DavidGuetta/</Face>
+      <Twt>https://x.com/davidguetta</Twt>
+      <Direccion>Calle París, 21, Francia</Direccion>
+      <telArtista>365740198</telArtista>
+      <correoArtista>davidguettamusic@gmail.com</correoArtista>
+      <Precio>18000</Precio>
+      <LugarAlojamiento>Hotel Medusa</LugarAlojamiento>
+      <PeticionesEspeciales>Escenario grande</PeticionesEspeciales>
+      <Escenario>Escenario Medusa Fun</Escenario>
+      <hora>21:00</hora>
+      <ImagenUrl>DavidGuetta.jpg</ImagenUrl>
+    </Artista>
+  </Festival>
+  <Festival nombre="Zevra">
+    <Artista>
+      <Nombre>Zevra</Nombre>
+      <Fecha>20/08/2024</Fecha>
+      <Artista_fest>Manuel Turizo</Artista_fest>
+      <Genero>Música Urbana</Genero>
+      <Biografia>Manuel Turizo Zapata (Montería, 12 de abril de 2000) es un cantante y
+compositor colombiano. Conocido principalmente por su canción «Una Lady como tú», 
+tema con el que logró obtener mayor reconocimiento internacional en América Latina, 
+España, Italia y Portugal. En 2018, el vídeo oficial de la canción llegó 
+a los mil millones de visualizaciones en YouTube.​</Biografia>
+      <telfManager>582961473</telfManager>
+      <correoManager>JulianTurizo@gmail.com</correoManager>
+      <Estado>Confirmado</Estado>
+      <Insta>https://www.instagram.com/manuelturizo/</Insta>
+      <Face>https://www.facebook.com/ManuelTurizoMusic/</Face>
+      <Twt>https://x.com/ManuelTurizoMTZ</Twt>
+      <Direccion>Calle Libertad, 24, Miami</Direccion>
+      <telArtista>951357864</telArtista>
+      <correoArtista>manuturizo@gmail.com</correoArtista>
+      <Precio>2500</Precio>
+      <LugarAlojamiento>Hotel Benicasit</LugarAlojamiento>
+      <PeticionesEspeciales>Actuación en el Escenario Main.</PeticionesEspeciales>
+      <Escenario>Escenario Main</Escenario>
+      <hora>23:00</hora>
+      <ImagenUrl>MT.jpg</ImagenUrl>
+    </Artista>
+    <Artista>
+      <Nombre>Zevra</Nombre>
+      <Fecha>20/08/2024</Fecha>
+      <Artista_fest>Cali y el Dandee</Artista_fest>
+      <Genero>Género Urbano</Genero>
+      <Biografia>Cali y el Dandee es un dúo musical colombiano del género urbano y pop,
+compuesto por los hermanos Alejandro Rengifo (Cali) y Mauricio Rengifo (el Dandee).</Biografia>
+      <telfManager>637295168</telfManager>
+      <correoManager>Papai@gamil.com</correoManager>
+      <Estado>Confirmado</Estado>
+      <Insta>https://www.instagram.com/calidandee/</Insta>
+      <Face>https://www.facebook.com/calidandee/</Face>
+      <Twt>https://x.com/Calidandee/status/1089339075646156801</Twt>
+      <Direccion>Calle Ruerta, 58, Miami</Direccion>
+      <telArtista>267195382</telArtista>
+      <correoArtista>calidandee@gmail.com</correoArtista>
+      <Precio>3500</Precio>
+      <LugarAlojamiento>Hotel Estrella</LugarAlojamiento>
+      <PeticionesEspeciales>Ninguna.</PeticionesEspeciales>
+      <Escenario>Escenario Main</Escenario>
+      <hora>00:00</hora>
+      <ImagenUrl>CaliDandee.jpg</ImagenUrl>
+    </Artista>
+  </Festival>
+</Festivales>
