@@ -219,7 +219,7 @@ main{ margin-top:18px; }
 /* Tarjeta individual */
 .course-card {
   display: grid;
-  grid-template-columns: 80px 1fr; /* Imagen fija a 80px, texto el resto */
+  grid-template-columns: min-content 1fr; /* La imagen usa solo el espacio que necesita */
   grid-template-areas:
     "logo body"
     "actions actions";
@@ -234,6 +234,7 @@ main{ margin-top:18px; }
   isolation: isolate;
   will-change: box-shadow;
   z-index: 0;
+  overflow: hidden; /* Evita desbordes de contenido */
 }
 
 .course-logo {
@@ -244,18 +245,19 @@ main{ margin-top:18px; }
 }
 
 .course-logo img {
-  width: 68px;   /* Tamaño fijo para que siempre aparezca */
+  width: 68px;
   height: 68px;
   object-fit: contain;
   border-radius: 12px;
   background: #fff;
   padding: 8px;
   box-shadow: 0 6px 18px rgba(12,15,25,.08);
+  max-width: 100%;
 }
 
 .course-body {
   grid-area: body;
-  overflow-wrap: break-word;
+  overflow-wrap: break-word; /* Evita que el texto se desborde */
   word-break: break-word;
 }
 

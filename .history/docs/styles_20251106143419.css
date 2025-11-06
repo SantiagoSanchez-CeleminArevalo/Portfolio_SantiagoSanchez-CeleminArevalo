@@ -1,0 +1,434 @@
+/* -----------------------------------------------------
+   RESET & BASE
+----------------------------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: #f6f7f9;
+  color: #1a1a1a;
+  line-height: 1.7;
+  transition: background .3s, color .3s;
+}
+
+/* Dark mode */
+body.dark-mode {
+  background: #0f0f10;
+  color: #e5e5e5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: auto;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: -999px;
+}
+
+.skip-link:focus {
+  left: 20px;
+  top: 20px;
+  background: #0077ff;
+  padding: 10px 15px;
+  color: #fff;
+  border-radius: 8px;
+  z-index: 1000;
+}
+
+/* -----------------------------------------------------
+   NAVBAR
+----------------------------------------------------- */
+.navbar {
+  background: rgba(255,255,255,0.8);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #ddd;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 90;
+  transition: background .3s;
+}
+
+body.dark-mode .navbar {
+  background: rgba(18,18,18,0.8);
+  border-color: #333;
+}
+
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-badge {
+  background: #0077ff;
+  color: white;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.nav-links a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: inherit;
+  font-weight: 500;
+  transition: .25s;
+}
+
+.nav-links a:hover {
+  color: #0077ff;
+  transform: translateY(-2px);
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.theme-toggle,
+.hamburger {
+  border: none;
+  background: none;
+  font-size: 1.4rem;
+  cursor: pointer;
+  color: inherit;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  margin-top: 10px;
+  gap: 12px;
+}
+
+.mobile-menu a {
+  text-decoration: none;
+  padding: 12px;
+  background: #fff;
+  border-radius: 10px;
+  color: #1a1a1a;
+  transition: .2s;
+}
+
+.mobile-menu a:hover {
+  background: #eaeaea;
+}
+
+body.dark-mode .mobile-menu a {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+@media (max-width: 850px) {
+  .nav-links {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+  }
+}
+
+/* -----------------------------------------------------
+   HERO
+----------------------------------------------------- */
+.hero {
+  padding: 70px 0;
+}
+
+.hero-grid {
+  display: grid;
+  gap: 40px;
+  grid-template-columns: 1fr 0.9fr;
+}
+
+@media (max-width: 850px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.profile {
+  text-align: center;
+}
+
+.profile-photo {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 22px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+}
+
+.subtitle {
+  opacity: 0.7;
+  margin-top: 5px;
+}
+
+.meta {
+  font-size: .95rem;
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+
+.cta-row {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+/* -----------------------------------------------------
+   BUTTONS
+----------------------------------------------------- */
+.btn {
+  padding: 12px 18px;
+  background: #0077ff;
+  color: white;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  transition: .25s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn.ghost {
+  background: transparent;
+  border: 2px solid #0077ff;
+  color: #0077ff;
+}
+
+.btn.ghost:hover {
+  background: #0077ff;
+  color: #fff;
+}
+
+.btn.small {
+  padding: 8px 12px;
+  font-size: .85rem;
+  border-radius: 8px;
+}
+
+/* -----------------------------------------------------
+   CARD BASE
+----------------------------------------------------- */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  margin-top: 40px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+  transition: .3s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+body.dark-mode .card {
+  background: #1a1a1a;
+  box-shadow: 0 8px 24px rgba(255,255,255,0.05);
+}
+
+/* -----------------------------------------------------
+   TWO COLUMN
+----------------------------------------------------- */
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+@media (max-width: 700px) {
+  .two-column {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* -----------------------------------------------------
+   CURSOS – GRID & FIX DE RUPTURA
+----------------------------------------------------- */
+.courses-grid {
+  margin-top: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+}
+
+.course-card {
+  background: #fff;
+  border-radius: 18px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  transition: .3s;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.06);
+  animation: fade .5s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+}
+
+body.dark-mode .course-card {
+  background: #161616;
+}
+
+.course-logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,.15);
+}
+
+.course-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+/* -----------------------------------------------------
+   PROYECTOS – TABS + BOTONES
+----------------------------------------------------- */
+.project-tabs {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.tab-btn {
+  padding: 10px 18px;
+  border-radius: 10px;
+  background: #eaf0ff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  transition: .25s;
+}
+
+.tab-btn:hover {
+  background: #dbe6ff;
+}
+
+.tab-btn.active {
+  background: #0077ff;
+  color: #fff;
+}
+
+body.dark-mode .tab-btn {
+  background: #222;
+}
+
+body.dark-mode .tab-btn.active {
+  background: #0077ff;
+}
+
+.projects-list a {
+  display: inline-block;
+  margin-top: 8px;
+  background: #0077ff;
+  padding: 7px 12px;
+  font-size: .85rem;
+  border-radius: 8px;
+  color: white !important;
+  text-decoration: none;
+  transition: .2s;
+}
+
+.projects-list a:hover {
+  transform: scale(1.05);
+}
+
+/* -----------------------------------------------------
+   ANIMACIÓN SUAVE
+----------------------------------------------------- */
+@keyframes fade {
+  from { opacity: 0; transform: translateY(10px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+/* -----------------------------------------------------
+   BACK TO TOP
+----------------------------------------------------- */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  padding: 12px 18px;
+  background: #0077ff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  opacity: 0;
+  pointer-events: none;
+  transition: .3s;
+  font-weight: 700;
+}
+
+.back-to-top.show {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* -----------------------------------------------------
+   FOOTER
+----------------------------------------------------- */
+.site-footer {
+  margin-top: 70px;
+  padding: 40px 0;
+  text-align: center;
+  opacity: .8;
+}
+
+.site-footer .social-icons a {
+  margin: 0 10px;
+  color: inherit;
+}
+
+/* -----------------------------------------------------
+   DARK MODE FIXES
+----------------------------------------------------- */
+body.dark-mode a {
+  color: #9bbcff;
+}
