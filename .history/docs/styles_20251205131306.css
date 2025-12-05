@@ -80,12 +80,14 @@ body.dark-mode .navbar{ background:rgba(11,16,32,.7); border-color:rgba(148,163,
 .theme-toggle:hover,.hamburger:hover{ box-shadow:var(--ring); color:var(--accent); }
 
 @media (max-width:820px){
+  /* Contenedor de búsqueda */
   .mobile-menu .search-bar {
     width: 100%;
     padding: 0 12px;
     box-sizing: border-box; 
   }
 
+  /* Input de búsqueda */
   .mobile-menu .search-bar input {
     width: 100%;
     max-width: 100%;

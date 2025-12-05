@@ -80,12 +80,14 @@ body.dark-mode .navbar{ background:rgba(11,16,32,.7); border-color:rgba(148,163,
 .theme-toggle:hover,.hamburger:hover{ box-shadow:var(--ring); color:var(--accent); }
 
 @media (max-width:820px){
+  /* Contenedor de búsqueda */
   .mobile-menu .search-bar {
     width: 100%;
-    padding: 0 12px;
-    box-sizing: border-box; 
+    padding: 0 12px; /* margen interno para que no se salga */
+    box-sizing: border-box; /* que el padding no aumente el ancho */
   }
 
+  /* Input de búsqueda */
   .mobile-menu .search-bar input {
     width: 100%;
     max-width: 100%;
@@ -125,9 +127,10 @@ body.dark-mode .navbar{ background:rgba(11,16,32,.7); border-color:rgba(148,163,
   filter:blur(60px); pointer-events:none; animation:slow-pan 22s linear infinite;
 }
 @keyframes slow-pan{ from{ transform:rotate(0deg) scale(1.1);} to{ transform:rotate(360deg) scale(1.1);} }
+/* Hero y foto de perfil */
 .hero-grid {
   display: grid;
-  grid-template-columns: 1fr minmax(150px, 25%);
+  grid-template-columns: 1fr minmax(150px, 25%); /* Imagen adaptativa */
   gap: 24px;
   align-items: start;
 }
@@ -142,8 +145,8 @@ body.dark-mode .navbar{ background:rgba(11,16,32,.7); border-color:rgba(148,163,
   box-shadow: 0 20px 60px rgba(2,6,23,.2);
   transition: var(--transition);
 
-  display: block;     
-  margin: 0 auto;    
+  display: block;      /* Necesario para usar margin auto */
+  margin: 0 auto;      /* Centra horizontalmente */
 }
 
 @keyframes fadeInUp{ from{ opacity:0; transform:translateY(24px);} to{ opacity:1; transform:translateY(0);} }
@@ -213,9 +216,10 @@ main{ margin-top:18px; }
   align-items: start;
 }
 
+/* Tarjeta individual */
 .course-card {
   display: grid;
-  grid-template-columns: 80px 1fr; 
+  grid-template-columns: 80px 1fr; /* Imagen fija a 80px, texto el resto */
   grid-template-areas:
     "logo body"
     "actions actions";
@@ -240,7 +244,7 @@ main{ margin-top:18px; }
 }
 
 .course-logo img {
-  width: 68px;   
+  width: 68px;   /* Tamaño fijo para que siempre aparezca */
   height: 68px;
   object-fit: contain;
   border-radius: 12px;
@@ -440,31 +444,35 @@ section[id], header[id], footer[id]{ scroll-margin-top: calc(var(--nav-height) +
     color: var(--muted);
   }
 
+  /* Botones */
   .course-actions {
     display: flex;
-    flex-direction: row;
+    flex-direction: row; /* Botones en fila */
     justify-content: center;
     gap: 10px;
     width: 100%;
   }
 
   .course-actions .btn.small {
-    width: auto;
+    width: auto; /* No ocupar todo el ancho */
     padding: 8px 12px;
     font-size: 0.9rem;
   }
 }
 
+/* Menú móvil vertical */
 @media (max-width:820px) {
+  /* Ocultar menú de navegación normal y mostrar botón hamburguesa */
   .nav-links { display: none; }
   .hamburger { display: inline-flex; }
 
+  /* Contenedor del menú móvil */
   .mobile-menu {
     display: flex;
-    flex-direction: column; 
-    gap: 12px; 
+    flex-direction: column; /* Elementos apilados verticalmente */
+    gap: 12px; /* Espacio entre elementos */
     position: absolute;
-    top: 100%; 
+    top: 100%; /* Justo debajo del navbar */
     left: 0;
     right: 0;
     background: var(--card);
@@ -475,9 +483,10 @@ section[id], header[id], footer[id]{ scroll-margin-top: calc(var(--nav-height) +
   }
 
   .mobile-menu[hidden] {
-    display: none !important; 
+    display: none !important; /* Oculto por defecto */
   }
 
+  /* Barra de búsqueda */
   .mobile-menu .search-bar {
     width: 100%;
     margin-bottom: 12px;
@@ -492,6 +501,7 @@ section[id], header[id], footer[id]{ scroll-margin-top: calc(var(--nav-height) +
     font-size: 1rem;
   }
 
+  /* Enlaces del menú */
   .mobile-menu a {
     display: block;
     padding: 12px 14px;
