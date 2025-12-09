@@ -13,18 +13,28 @@ permissions:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages  # ⚠️ Necesario para deploy-pages
     steps:
+      # 1️⃣ Clonar el repositorio
       - uses: actions/checkout@v3
 
+      # 2️⃣ Configurar GitHub Pages
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
+      # 3️⃣ Subir el artifact para deploy
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: docs  # Carpeta que contiene index.html y todo tu portfolio
+          path: |
+            docs        # Tu index.html y todo el portfolio
+            docs/images # Imágenes
+            docs/projects # Proyectos
+            docs/styles.css # CSS principal
+          # Incluye aquí cualquier otra carpeta o archivo necesario
 
+      # 4️⃣ Desplegar
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4
-
