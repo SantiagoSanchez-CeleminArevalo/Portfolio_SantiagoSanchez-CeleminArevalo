@@ -1,0 +1,98 @@
+<div class="login-container comun-variant login-usuario">
+  <!-- Botón de volver -->
+
+  <button type="button" class="back-to-home" [routerLink]="APP_ROUTES.home">
+    <span class="btn-icon">&#8592;</span>
+    <span class="btn-text">Volver al Inicio</span>
+  </button>
+
+
+  <div class="login-card">
+    <!-- Header del Login -->
+    <header class="app-header usuario-variant">
+      <div class="login-logo">
+        <div class="logo-icon">🎬</div>
+        <h1 class="brand-name">esiMedia</h1>
+      </div>
+      
+      <div class="header-content">
+        <h2 class="header-title">Iniciar Sesión - Usuario</h2>
+        <p class="header-subtitle">Te damos la bienvenida. Accede a tu cuenta para continuar.</p>
+      </div>
+    </header>
+
+    <!-- Formulario de Login -->
+    <form class="login-form" [formGroup]="loginForm" (ngSubmit)="onLogin()">
+      <div class="form-group">
+        <label for="email" class="form-label">Correo Electrónico</label>
+        <div class="input-wrapper">
+          <input
+            type="email"
+            id="email"
+            formControlName="email"
+            class="form-input"
+            placeholder="tu@ejemplo.com"
+            [class.invalid]="isFieldInvalid('email')"
+          >
+        </div>
+        <div class="error-message" *ngIf="isFieldInvalid('email')">
+          {{ getFieldError('email') }}
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="password" class="form-label">Contraseña</label>
+        <div class="input-wrapper">
+          <input
+            [type]="showPassword ? 'text' : 'password'"
+            id="password"
+            formControlName="password"
+            class="form-input"
+            placeholder="Tu contraseña"
+            [class.invalid]="isFieldInvalid('password')"
+          >
+          <button type="button" class="input-icon toggle-password" (click)="togglePassword()">
+            {{ showPassword ? '🙈' : '👁️' }}
+          </button>
+        </div>
+        <div class="error-message" *ngIf="isFieldInvalid('password')">
+          {{ getFieldError('password') }}
+        </div>
+      </div>
+
+      <div class="form-options">
+        <a [routerLink]="USUARIO_ROUTES.recuperarPassword" class="forgot-password">
+          ¿Olvidaste tu contraseña?
+        </a>
+        
+      </div>
+
+      <button 
+        type="submit" 
+        class="login-btn"
+        [disabled]="loginForm.invalid || isLoading"
+      >
+        <span class="btn-content" *ngIf="!isLoading">
+          <span class="btn-text">Acceder como Usuario</span>
+        </span>
+        <span class="loading-spinner" *ngIf="isLoading">
+          <span class="spinner"></span>
+          <span class="loading-text">Iniciando sesión...</span>
+        </span>
+      </button>
+    </form>
+
+    <!-- Separador -->
+    <div class="separator">
+      <span class="separator-text">¿No tienes cuenta de usuario?</span>
+    </div>
+
+    <!-- Enlaces de Registro -->
+    <div class="register-options">
+      <button type="button" class="usuario-btn" [routerLink]="USUARIO_ROUTES.registro">
+        <span class="btn-icon">👤</span>
+        <span class="btn-text">Registrarse como Usuario</span>
+      </button>
+    </div>
+  </div>
+</div>
