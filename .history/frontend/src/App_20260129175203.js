@@ -299,50 +299,50 @@ const SectionContent = ({ sectionId }) => {
                   course: 'Interacción Persona-Ordenador', 
                   tech: 'WPF, GUI, usabilidad', 
                   highlight: false,
-                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/GesstiFest'
+                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/GesstiFest'
                 },
                 { 
                   title: 'Lab_C1_SanchezPalomino', 
                   course: 'Arquitectura de Computadores', 
                   tech: 'OpenMP, DPC, Hiperespectral', 
                   highlight: false,
-                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/Lab_C1_SanchezPalomino-main'
+                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Lab_C1_SanchezPalomino'
                 },
                 { 
                   title: '2024-ISO2-BC5', 
                   course: 'Ingeniería de Software 2', 
                   tech: 'PUD, GitHub, Maven, MySQL, POI', 
                   highlight: false,
-                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/2024-ISO2-BC5-main'
+                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/2024-ISO2-BC5'
                 },
                 { 
                   title: 'remote-types', 
                   course: 'Sistemas Distribuidos', 
                   tech: 'ZeroC Ice, JSON, Apache Kafka', 
                   highlight: false,
-                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/remote-types-main-main'
+                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/remote-types'
                 },
                 { 
                   title: 'Sokoban_SSII', 
                   course: 'Sistemas Inteligentes', 
-                  tech: 'Algoritmos de búsqueda, Python, Backtraking, Evaluación de rendimiento, Espacio de estados', 
+                  tech: 'Algoritmos de búsqueda, Python', 
                   highlight: false,
-                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/Sokoban_SSII'
+                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Sokoban_SSII'
                 },
                 { 
                   title: 'Digital Builders 2025 — ESI & NTT DATA (3º Puesto)', 
                   course: 'Proyecto universitario Scrum', 
-                  tech: 'Metodología ágil, MVP, stakeholders, gestión de proyectos, BackLog', 
+                  tech: 'Metodología ágil, MVP, stakeholders', 
                   highlight: true,
-                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/Digital_Builders_2025',  // Cambia esto si tienes el enlace
+                  github: null,  // Cambia esto si tienes el enlace
                   demo: null  // Si tienes una demo en vivo, añádela aquí
                 },
                 { 
                   title: 'Proyecto Completo Gestión Proyectos', 
                   course: 'Gestión Integral de Proyectos Software', 
-                  tech: 'Scrum, planificación, control de calidad, eMarisma, Sonarqube, Azure', 
+                  tech: 'Scrum, planificación, control de calidad', 
                   highlight: false,
-                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/Proyecto_Completo_Gestion_Proyectos'  // Cambia esto si tienes el enlace
+                  github: null  // Cambia esto si tienes el enlace
                 }
               ].map((project, i) => (
                 <motion.div key={i} className={`project-card ${project.highlight ? 'highlight' : ''}`} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>

@@ -325,14 +325,14 @@ const SectionContent = ({ sectionId }) => {
                 { 
                   title: 'Sokoban_SSII', 
                   course: 'Sistemas Inteligentes', 
-                  tech: 'Algoritmos de búsqueda, Python, Backtraking, Evaluación de rendimiento, Espacio de estados', 
+                  tech: 'Algoritmos de búsqueda, Python', 
                   highlight: false,
                   github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/Sokoban_SSII'
                 },
                 { 
                   title: 'Digital Builders 2025 — ESI & NTT DATA (3º Puesto)', 
                   course: 'Proyecto universitario Scrum', 
-                  tech: 'Metodología ágil, MVP, stakeholders, gestión de proyectos, BackLog', 
+                  tech: 'Metodología ágil, MVP, stakeholders, gestión de', 
                   highlight: true,
                   github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/Digital_Builders_2025',  // Cambia esto si tienes el enlace
                   demo: null  // Si tienes una demo en vivo, añádela aquí

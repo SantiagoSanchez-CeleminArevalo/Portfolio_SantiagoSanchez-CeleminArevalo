@@ -325,7 +325,7 @@ const SectionContent = ({ sectionId }) => {
                 { 
                   title: 'Sokoban_SSII', 
                   course: 'Sistemas Inteligentes', 
-                  tech: 'Algoritmos de búsqueda, Python, Backtraking, Evaluación de rendimiento, Espacio de estados', 
+                  tech: 'Algoritmos de búsqueda, Python, Backtraking, Evaluación de rendimineto', 
                   highlight: false,
                   github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/Sokoban_SSII'
                 },

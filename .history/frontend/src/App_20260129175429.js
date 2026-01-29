@@ -325,24 +325,24 @@ const SectionContent = ({ sectionId }) => {
                 { 
                   title: 'Sokoban_SSII', 
                   course: 'Sistemas Inteligentes', 
-                  tech: 'Algoritmos de búsqueda, Python, Backtraking, Evaluación de rendimiento, Espacio de estados', 
+                  tech: 'Algoritmos de búsqueda, Python', 
                   highlight: false,
                   github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/Sokoban_SSII'
                 },
                 { 
                   title: 'Digital Builders 2025 — ESI & NTT DATA (3º Puesto)', 
                   course: 'Proyecto universitario Scrum', 
-                  tech: 'Metodología ágil, MVP, stakeholders, gestión de proyectos, BackLog', 
+                  tech: 'Metodología ágil, MVP, stakeholders', 
                   highlight: true,
-                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/Digital_Builders_2025',  // Cambia esto si tienes el enlace
+                  github: '',  // Cambia esto si tienes el enlace
                   demo: null  // Si tienes una demo en vivo, añádela aquí
                 },
                 { 
                   title: 'Proyecto Completo Gestión Proyectos', 
                   course: 'Gestión Integral de Proyectos Software', 
-                  tech: 'Scrum, planificación, control de calidad, eMarisma, Sonarqube, Azure', 
+                  tech: 'Scrum, planificación, control de calidad', 
                   highlight: false,
-                  github: 'https://github.com/SantiagoSanchez-CeleminArevalo/Portfolio_SantiagoSanchez-CeleminArevalo/tree/projects/projects/Proyecto_Completo_Gestion_Proyectos'  // Cambia esto si tienes el enlace
+                  github: null  // Cambia esto si tienes el enlace
                 }
               ].map((project, i) => (
                 <motion.div key={i} className={`project-card ${project.highlight ? 'highlight' : ''}`} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.05 }}>
