@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Portfolio_SantiagoSanchez-CeleminArevalo/static/css/main.dc3f5438.css",
+    "main.js": "/Portfolio_SantiagoSanchez-CeleminArevalo/static/js/main.dcd40ef2.js",
+    "index.html": "/Portfolio_SantiagoSanchez-CeleminArevalo/index.html",
+    "main.dc3f5438.css.map": "/Portfolio_SantiagoSanchez-CeleminArevalo/static/css/main.dc3f5438.css.map",
+    "main.dcd40ef2.js.map": "/Portfolio_SantiagoSanchez-CeleminArevalo/static/js/main.dcd40ef2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.dc3f5438.css",
+    "static/js/main.dcd40ef2.js"
+  ]
+}
