@@ -45,6 +45,13 @@ const DESK_ITEMS = {
     icon: Coffee,
     color: "#ff6b35"
   },
+  experience: {
+    id: "experience",
+    title: "Experiencia",
+    subtitle: "Maletín Profesional",
+    icon: Briefcase,
+    color: "#00ff88"
+  },
   phone: {
     id: "phone",
     title: "Contacto",
@@ -125,6 +132,63 @@ const SectionContent = ({ sectionId }) => {
           <a href="cv/Curriculum_Santiago_Sánchez-Celemín_Arévalo.pdf" download className="download-cv-btn mt-6">
             <Download className="w-5 h-5" /> Descargar CV
           </a>
+        </div>
+      </div>
+    ),
+    experience: (
+      <div className="section-content" data-testid="content-experience">
+        <h2 className="section-title" style={{ color: '#00ff88' }}>
+          <Briefcase className="w-8 h-8" /> Experiencia
+        </h2>
+
+        <div className="education-list">
+          {[
+            {
+              title: 'Gestión de Proyectos (Estudiante en Prácticas)',
+              institution: 'Mutua Madrileña — Madrid, España',
+              period: '2024',
+              description:
+                'Participación en la gestión y seguimiento de proyectos en entorno corporativo dentro de equipos ágiles. Uso de herramientas de gestión, validación funcional y soporte a despliegues.',
+              highlights: [
+                'Gestión y seguimiento de proyectos mediante Jira y Confluence',
+                'Definición y validación de requisitos funcionales',
+                'Ejecución de pruebas UAT con Postman',
+                'Seguimiento de incidencias y despliegues',
+                'Automatización y optimización de procesos internos',
+                'Participación en proyectos con PEGA y SQL',
+                'Trabajo en entornos ágiles (Scrum y Kanban)'
+              ]
+            }
+          ].map((exp, i) => (
+            <motion.div
+              key={i}
+              className="education-item"
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              transition={{ delay: i * 0.1 }}
+            >
+              <Briefcase className="edu-icon" />
+              <div>
+                <h3>{exp.title}</h3>
+                <p className="institution">{exp.institution}</p>
+                <p className="period">{exp.period}</p>
+
+                {exp.description && (
+                  <p className="description">{exp.description}</p>
+                )}
+
+                {exp.highlights && (
+                  <ul className="experience-list">
+                    {exp.highlights.map((item, i) => (
+                      <li key={i}>
+                        <CheckCircle className="w-4 h-4" /> {item}
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            </motion.div>
+          ))}
         </div>
       </div>
     ),
@@ -369,8 +433,55 @@ const SectionContent = ({ sectionId }) => {
             </motion.div>
           )}
           {activeTab === 'gen' && (
-            <motion.div key="gen" className="empty-state" initial={{ opacity: 0 }} animate={{ opacity: 1 }}>
-              No hay proyectos generales añadidos aún.
+            <motion.div
+              key="gen"
+              className="projects-list"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+            >
+              {[
+                {
+                  title: 'Sistema de clasificación de vehículos microhíbridos',
+                  course: 'Proyecto profesional',
+                  tech: 'PEGA, SQL, SQuirreL, Office, Power BI',
+                  highlight: false,
+                  description:
+                    'Desarrollo de algoritmos para la identificación y clasificación automática de vehículos microhíbridos, permitiendo la asignación de distintivos medioambientales ECO y no ECO. Participación en análisis de reglas de negocio, validación funcional y optimización de procesos.'
+                },
+                {
+                  title: 'Plataforma de fotoverificación para peritación mediante IA',
+                  course: 'Proyecto profesional',
+                  tech: 'PEGA, SQL, SQuirreL, IA, Postman',
+                  highlight: false,
+                  description:
+                    'Integración de proveedores externos de fotoverificación basados en IA dentro de procesos de peritación de vehículos. Desarrollo de lógica de reparto entre proveedores, validación funcional y seguimiento de despliegues e incidencias.'
+                },
+                {
+                  title: 'Sistema de gestión de vehículos sin matrícula',
+                  course: 'Proyecto profesional',
+                  tech: 'PEGA, SQL, SQuirreL, UAT, ACPtower',
+                  highlight: false,
+                  description:
+                    'Diseño e implementación de una solución para el registro, almacenamiento y gestión de vehículos identificados mediante número de bastidor (VIN) o serie. Definición de procesos, modelado de datos y validación funcional.'
+                }
+              ].map((project, i) => (
+                <motion.div
+                  key={i}
+                  className={`project-card ${project.highlight ? 'highlight' : ''}`}
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: i * 0.05 }}
+                >
+                  <h3>{project.title}</h3>
+                  <p className="course">{project.course}</p>
+                  <p className="tech">{project.tech}</p>
+
+                  {project.description && (
+                    <p className="description">{project.description}</p>
+                  )}
+                </motion.div>
+              ))}
             </motion.div>
           )}
         </AnimatePresence>
