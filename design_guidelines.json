@@ -1,0 +1,130 @@
+{
+  "identity": {
+    "name": "E1",
+    "role": "Creative Designer",
+    "principles": [
+      "Fusion over Imitation",
+      "Emotion First",
+      "Content is King",
+      "Zoom In",
+      "Negative Space",
+      "Contrast"
+    ]
+  },
+  "project": {
+    "name": "PC Interior Portfolio",
+    "description": "A highly realistic interactive portfolio where the user explores a PC case interior. Each component represents a section (CPU=Home, GPU=Skills, RAM=About, etc.).",
+    "target_audience": "Recruiters, Tech Companies, Developers",
+    "emotional_tone": "Professional, High-Tech, Immersive, 'Gamer-Chic'",
+    "platform": "Web (Responsive)"
+  },
+  "design_system": {
+    "colors": {
+      "palette": {
+        "background": "#050505",
+        "surface": "#121212",
+        "primary": "#00f3ff",
+        "secondary": "#ff00aa",
+        "accent": "#39ff14",
+        "text_primary": "#ffffff",
+        "text_secondary": "#a0a0a0",
+        "border": "rgba(255, 255, 255, 0.1)"
+      },
+      "gradients": {
+        "cyberpunk": "linear-gradient(135deg, #00f3ff 0%, #ff00aa 100%)",
+        "glass": "linear-gradient(180deg, rgba(20, 20, 20, 0.7) 0%, rgba(10, 10, 10, 0.9) 100%)"
+      }
+    },
+    "typography": {
+      "font_family": {
+        "headings": "Rajdhani, sans-serif",
+        "body": "Inter, sans-serif",
+        "mono": "JetBrains Mono, monospace"
+      },
+      "scale": {
+        "h1": "text-5xl md:text-7xl font-bold tracking-tighter uppercase",
+        "h2": "text-3xl md:text-4xl font-bold tracking-tight uppercase",
+        "h3": "text-xl md:text-2xl font-semibold tracking-wide uppercase",
+        "body": "text-base md:text-lg leading-relaxed",
+        "caption": "text-xs md:text-sm font-mono text-muted-foreground"
+      }
+    },
+    "spacing": {
+      "container_padding": "p-4 md:p-8 lg:p-12",
+      "section_gap": "gap-8 md:gap-16"
+    },
+    "effects": {
+      "glassmorphism": "backdrop-blur-xl bg-black/60 border border-white/10 shadow-2xl",
+      "neon_glow": "drop-shadow(0 0 10px rgba(0, 243, 255, 0.5))",
+      "component_hover": "scale-105 brightness-125 transition-all duration-300 ease-out"
+    }
+  },
+  "layout_strategy": {
+    "desktop": {
+      "type": "Interactive Map",
+      "description": "Full-screen background image of PC interior. Invisible interactive zones (hotspots) overlaid on components.",
+      "navigation": "Top fixed 'System Monitor' bar that expands to show content."
+    },
+    "mobile": {
+      "type": "Vertical Stack / Card List",
+      "description": "Since the wide PC view doesn't fit portrait, use a 'System Specs' list where each item is a card styled like a component (e.g., 'GPU: Skills' card with a fan icon).",
+      "navigation": "Sticky top bar with hamburger menu or horizontal scroll tabs."
+    }
+  },
+  "components": {
+    "BackgroundCanvas": {
+      "description": "The main container holding the PC image.",
+      "image_url": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c",
+      "alt": "High-end watercooled PC interior with RGB lighting",
+      "styles": "fixed inset-0 w-full h-full object-cover z-0"
+    },
+    "Hotspot": {
+      "description": "Interactive zone over a component.",
+      "props": ["x", "y", "width", "height", "label", "targetSection"],
+      "interaction": "Hover: Glow effect + Tooltip. Click: Open TopBar content.",
+      "animation": "Pulse animation to indicate interactivity."
+    },
+    "TopBar": {
+      "description": "The 'HUD' or 'BIOS' bar. Always visible at top.",
+      "content": "Shows 'System Status' (Time, CPU Temp mock, etc.) and the Active Section Title.",
+      "styles": "fixed top-0 left-0 w-full h-16 z-50 glassmorphism flex items-center justify-between px-6 border-b border-white/10"
+    },
+    "ContentPanel": {
+      "description": "The area that displays the actual portfolio content.",
+      "behavior": "Slides down from the TopBar or overlays the screen with a glass effect when a component is clicked.",
+      "styles": "fixed top-16 left-0 w-full h-[calc(100vh-4rem)] z-40 bg-black/90 backdrop-blur-md overflow-y-auto p-8 transform transition-transform duration-500"
+    }
+  },
+  "assets": {
+    "images": {
+      "pc_interior_bg": "https://images.unsplash.com/photo-1587202372634-32705e3bf49c",
+      "cpu_detail": "https://images.unsplash.com/photo-1738347826189-a39ac950bbe0",
+      "motherboard_detail": "https://images.unsplash.com/photo-1738347826166-47989060ac57"
+    },
+    "icons": "Lucide React (Cpu, HardDrive, Zap, Monitor, Layers, User, Mail, FileText)"
+  },
+  "mapping": {
+    "CPU": { "section": "Home", "icon": "Cpu", "label": "Central Processing Unit" },
+    "RAM": { "section": "About Me", "icon": "MemoryStick", "label": "Random Access Memory" },
+    "GPU": { "section": "Skills", "icon": "Monitor", "label": "Graphics Processing Unit" },
+    "Storage": { "section": "Education", "icon": "HardDrive", "label": "Storage (HDD/SSD)" },
+    "Cooling": { "section": "Projects", "icon": "Fan", "label": "Cooling System" },
+    "PSU": { "section": "Contact", "icon": "Zap", "label": "Power Supply" },
+    "IO_Ports": { "section": "Socials", "icon": "Share2", "label": "I/O Ports" }
+  },
+  "instructions_to_main_agent": [
+    "1. Install 'lucide-react' and 'framer-motion' if not present.",
+    "2. Create a 'Layout' component that houses the BackgroundCanvas and TopBar.",
+    "3. Use the 'pc_interior_bg' as the absolute background.",
+    "4. Implement 'Hotspot' components using absolute positioning percentages (e.g., top: 40%, left: 50%) to map over the image components. You will need to trial-and-error the positions or create a debug mode to drag them.",
+    "5. The 'ContentPanel' should be hidden by default and animate in when a hotspot is clicked.",
+    "6. Use 'Rajdhani' font for all headers to give that sci-fi/tech look.",
+    "7. Ensure the mobile view falls back to a list of styled cards because the interactive map won't work well on small vertical screens."
+  ],
+  "universal_guidelines": [
+    "Do not use gradients for dark colors.",
+    "Use glassmorphism with backdrop-filter.",
+    "Add micro-interactions to everything.",
+    "Ensure text contrast is high (White on Black/Dark Grey)."
+  ]
+}
