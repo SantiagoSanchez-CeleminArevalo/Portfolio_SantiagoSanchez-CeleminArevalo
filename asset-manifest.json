@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Portfolio_SantiagoSanchez-CeleminArevalo/static/css/main.dc3f5438.css",
-    "main.js": "/Portfolio_SantiagoSanchez-CeleminArevalo/static/js/main.dcd40ef2.js",
+    "main.css": "/Portfolio_SantiagoSanchez-CeleminArevalo/static/css/main.0437824e.css",
+    "main.js": "/Portfolio_SantiagoSanchez-CeleminArevalo/static/js/main.53bb3456.js",
     "index.html": "/Portfolio_SantiagoSanchez-CeleminArevalo/index.html",
-    "main.dc3f5438.css.map": "/Portfolio_SantiagoSanchez-CeleminArevalo/static/css/main.dc3f5438.css.map",
-    "main.dcd40ef2.js.map": "/Portfolio_SantiagoSanchez-CeleminArevalo/static/js/main.dcd40ef2.js.map"
+    "main.0437824e.css.map": "/Portfolio_SantiagoSanchez-CeleminArevalo/static/css/main.0437824e.css.map",
+    "main.53bb3456.js.map": "/Portfolio_SantiagoSanchez-CeleminArevalo/static/js/main.53bb3456.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc3f5438.css",
-    "static/js/main.dcd40ef2.js"
+    "static/css/main.0437824e.css",
+    "static/js/main.53bb3456.js"
   ]
 }
