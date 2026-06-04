@@ -508,25 +508,25 @@ const SectionContent = ({ sectionId }) => {
             >
               {[
                 {
-                  title: 'Sistema de clasificación de vehículos microhíbridos',
+                  title: 'Sistema de identificación de etiqueta medioambiental del vehículo para el control de oferta comercial.',
                   course: 'Proyecto profesional',
-                  tech: 'PEGA, SQL, SQuirreL, Office, Power BI',
+                  tech: 'SQL, SQuirreL, Office, Power BI',
                   highlight: false,
                   description:
-                    'Desarrollo de algoritmos para la identificación y clasificación automática de vehículos microhíbridos, permitiendo la asignación de distintivos medioambientales ECO y no ECO. Participación en análisis de reglas de negocio, validación funcional y optimización de procesos.'
+                    'Desarrollo de algoritmos para la identificación y clasificación automática de vehículos microhíbridos, permitiendo la asignación de distintivos medioambientales ECO y no ECO. Definición de las reglas funcionales de negocio, validación y optimización de procesos.'
                 },
                 {
-                  title: 'Plataforma de fotoverificación para peritación mediante IA',
+                  title: 'Integración de proveedores externos de fotoverificación basados en Inteligencia Artificial dentro de los procesos de peritación de vehículos. ',
                   course: 'Proyecto profesional',
                   tech: 'PEGA, SQL, SQuirreL, IA, Postman',
                   highlight: false,
                   description:
-                    'Integración de proveedores externos de fotoverificación basados en IA dentro de procesos de peritación de vehículos. Desarrollo de lógica de reparto entre proveedores, validación funcional y seguimiento de despliegues e incidencias.'
+                    'Desarrollo de lógica de reparto entre proveedores, definición de requerimientos funcionales, validación, gestión con proveedor externo y seguimiento de despliegues e incidencias.'
                 },
                 {
-                  title: 'Sistema de gestión de vehículos sin matrícula',
+                  title: 'Diseño e implementación de una solución para el registro en el fichero de inspección de vehículos asegurados  identificados mediante número de bastidor (VIN) o serie.',
                   course: 'Proyecto profesional',
-                  tech: 'PEGA, SQL, SQuirreL, UAT, ACPtower',
+                  tech: 'SQL, SQuirreL, Office',
                   highlight: false,
                   description:
                     'Diseño e implementación de una solución para el registro, almacenamiento y gestión de vehículos identificados mediante número de bastidor (VIN) o serie. Definición de procesos, modelado de datos y validación funcional.'
