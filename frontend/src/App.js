@@ -146,7 +146,7 @@ const SectionContent = ({ sectionId }) => {
             {
               title: 'Gestión de Proyectos (Estudiante en Prácticas)',
               institution: 'Mutua Madrileña — Madrid, España',
-              period: '2024',
+              period: '2026',
               description:
                 'Participación en la gestión y seguimiento de proyectos en entorno corporativo dentro de equipos ágiles. Uso de herramientas de gestión, validación funcional y soporte a despliegues.',
               highlights: [
