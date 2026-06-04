@@ -125,7 +125,7 @@ const SectionContent = ({ sectionId }) => {
           
           <div className="info-card mt-8">
             <p className="info-row"><Phone className="w-5 h-5 text-cyan-400" /> <span>+34 638 85 64 13</span></p>
-            <p className="info-row"><MapPin className="w-5 h-5 text-cyan-400" /> <span>Ciudad Real / Corral de Almaguer</span></p>
+            <p className="info-row"><MapPin className="w-5 h-5 text-cyan-400" /> <span>Toledo / Madrid</span></p>
             <p className="info-row"><Briefcase className="w-5 h-5 text-cyan-400" /> <span>Carnet B · Disponibilidad para viajar</span></p>
           </div>
           
@@ -257,7 +257,7 @@ const SectionContent = ({ sectionId }) => {
             {
               title: 'Ingeniería Informática',
               institution: 'Universidad de Castilla-La Mancha (UCLM), Ciudad Real',
-              period: '2022 — 2025 (en curso)',
+              period: '2022 — 2026',
               description: 'Estudiante del Grado en Ingeniería Informática. Formación orientada a desarrollo de software, bases de datos y sistemas.',
               icon: GraduationCap
             },
@@ -288,15 +288,56 @@ const SectionContent = ({ sectionId }) => {
         <h2 className="section-title" style={{ color: '#ffd700' }}>
           <Languages className="w-8 h-8" /> Idiomas
         </h2>
+
         <div className="languages-grid">
           {[
-            { flag: '🇪🇸', name: 'Español', level: 'Nativo' },
-            { flag: '🇬🇧', name: 'Inglés', level: 'Profesional' }
+            {
+              flag: '🇪🇸',
+              name: 'Español',
+              level: 'Nativo'
+            },
+            {
+              flag: '🇬🇧',
+              name: 'Inglés',
+              level: 'Profesional',
+              certification: 'Nivel B2',
+              certificateUrl: process.env.PUBLIC_URL + '/certs/ingles_b2.png'
+            }
           ].map((lang, i) => (
-            <motion.div key={i} className="language-card" whileHover={{ scale: 1.05, y: -5 }}>
+            <motion.div
+              key={i}
+              className="language-card"
+              whileHover={{ scale: 1.05, y: -5 }}
+            >
               <span className="flag">{lang.flag}</span>
+
               <h3>{lang.name}</h3>
+
               <p>{lang.level}</p>
+
+              {lang.certification && (
+                <p
+                  style={{
+                    color: '#ffd700',
+                    fontWeight: 'bold',
+                    marginTop: '0.5rem'
+                  }}
+                >
+                  {lang.certification}
+                </p>
+              )}
+
+              {lang.certificateUrl && (
+                <a
+                  href={lang.certificateUrl}
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="certificate-button"
+                >
+                  📄 Descargar certificado
+                </a>
+              )}
             </motion.div>
           ))}
         </div>
@@ -497,7 +538,7 @@ const SectionContent = ({ sectionId }) => {
           {[
             { icon: Phone, title: 'Teléfono', value: '+34 638 85 64 13', href: 'tel:+34638856413' },
             { icon: Mail, title: 'Email', value: 's.sanchezcelemin@gmail.com', href: 'mailto:s.sanchezcelemin@gmail.com' },
-            { icon: MapPin, title: 'Direcciones', value: 'Corral de Almaguer / Ciudad Real', href: null },
+            { icon: MapPin, title: 'Direcciones', value: 'Toledo / Madrid', href: null },
             { icon: Linkedin, title: 'LinkedIn', value: 'santiago-sánchez-celemín-arévalo', href: 'https://www.linkedin.com/in/santiago-s%C3%A1nchez-celem%C3%ADn-ar%C3%A9valo/' }
           ].map((contact, i) => (
             <motion.div key={i} className="contact-card" whileHover={{ scale: 1.02 }}>
