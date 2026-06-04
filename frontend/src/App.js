@@ -198,11 +198,36 @@ const SectionContent = ({ sectionId }) => {
         <h2 className="section-title" style={{ color: '#39ff14' }}>
           <User className="w-8 h-8" /> Sobre Mí
         </h2>
+
         <div className="prose-content">
-          <p>Soy Santiago, estudiante del Grado en Ingeniería Informática en la UCLM, con especial interés en el desarrollo de software y tecnologías como <strong>Java, Spring Boot, Angular, SQL y Python</strong>.</p>
-          <p>Me considero una persona con una gran <strong>capacidad de aprendizaje rápido</strong>, capaz de adaptarme a nuevos entornos y herramientas con facilidad.</p>
-          <p>Disfruto trabajando en equipo, aportando soluciones y manteniendo siempre una <strong>actitud proactiva y orientada a resultados</strong>. Además, estoy acostumbrado a trabajar con <strong>Git y metodologías ágiles (Scrum)</strong> en equipo.</p>
-          <p>Cuento también con formación complementaria en <strong>bases de datos, cloud e inteligencia artificial</strong>, lo que me permite abordar proyectos de forma eficaz.</p>
+          <p>
+            Interés en la ingeniería del software y el desarrollo de aplicaciones, con enfoque en la creación de soluciones eficientes, escalables y bien estructuradas.
+            Capacidad de aprendizaje continuo y adaptación a nuevas tecnologías, lenguajes de programación y metodologías de desarrollo como Agile/Scrum.
+          </p>
+
+          <p>
+            Conocimientos en programación (Java, Python, C++), bases de datos y fundamentos de desarrollo web (HTML, CSS), en constante evolución y mejora.
+          </p>
+
+          <p>
+            Conocimientos avanzados de gestión de proyectos, incluyendo planificación, organización de tareas y trabajo por objetivos, así como familiaridad con metodologías ágiles y entornos colaborativos.
+          </p>
+
+          <p>
+            Responsabilidad y compromiso en el desarrollo de proyectos, con atención al detalle, orientación a la calidad y cumplimiento de plazos.
+          </p>
+
+          <p>
+            Capacidad de trabajo en equipo, participando activamente en la comunicación, coordinación y resolución de problemas dentro de grupos de trabajo.
+          </p>
+
+          <p>
+            Manejo de herramientas ofimáticas (Microsoft Office: Word, Excel) para la gestión de información y apoyo en la organización de tareas.
+          </p>
+
+          <p>
+            Actitud proactiva, con motivación por crecer profesionalmente en el sector tecnológico y aportar valor en proyectos de desarrollo de software.
+          </p>
         </div>
       </div>
     ),
